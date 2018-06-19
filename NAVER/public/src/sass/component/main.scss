@@ -1,0 +1,259 @@
+@import '../base/color.scss';
+
+.wrap{
+  width: 1080px;
+  margin: auto;
+  overflow: hidden;
+}
+.ft-gr{
+  color: $green;
+}
+
+/* header start*/
+//top
+.top{
+  overflow: hidden;
+  padding: 15px 0;
+}
+.top__navi{
+  float: right;
+  >li{
+    float: left;
+    >a{
+      display: block;
+      padding: 5px;
+      font-size: 12px;
+      letter-spacing: -2px;
+      color: rgb(136,136,136);
+    }
+  }
+}
+.head__box{
+  padding: 35px 0 70px 0;
+}
+.head__search{
+  overflow: hidden;
+  >li{
+    float: left;
+    margin-left: 20px;
+  }
+}
+.head__form{
+  position: relative;
+  height: 25px;
+  width: 525px;
+  padding: 10px;
+  border:2px solid $green;
+}
+.head__search_bar{
+  position: absolute;
+  width: 495px;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  border: 0;
+}
+.head__search_bt{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: $green;
+  border: 0;
+  text-align: center;
+}
+// nav
+.nav{
+  position: relative;
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+}
+.nav__ul{
+  >li{
+    cursor: pointer;
+    float: left;
+    >a{
+      letter-spacing: -2px;
+    }
+  }
+}
+.nav_ft{
+  display: block;
+  padding: 10px 8px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.nav_more_cont{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 0;
+}
+.nav__more{
+  overflow: hidden;
+  >li{
+    float: left;
+    width: 10%;
+    border-left: 1px solid $gray;
+    padding: 15px;
+    font-size: 14px;
+    >ul{
+      margin-top: 10px;
+    >li>a{
+      display: block;
+      padding:5px 0;
+      font-size: 14px;
+      font-weight: 400;
+      &:hover{
+        background: orange;
+      }
+    }
+  }
+  }
+}
+.nav__opacity{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 580px;
+  background: black;
+  opacity: .1;
+}
+.active{
+  display: block;
+}
+.n{
+  display: inline-block;
+  width: 12px;
+  height: 11px;
+  background: url('../../img/head/new.png') no-repeat;
+}
+
+.nav__live{
+  position: relative;
+  top: 2px;
+  .live__hv_pannel{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: white;
+    border: 1px solid rgb(209,216,228);
+  }
+  &:hover .live__hv_pannel{
+    display: block;
+  }
+}
+.live__arrow{
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+.live__ul{
+  position: relative;
+  overflow: hidden;
+  width: 247px;
+  height: 30px;
+  >li{
+    position: relative;
+    text-align: center;
+    padding: 7px 0;
+    top: 0;
+    animation: liveUp 60s 2s infinite;
+  }
+  @keyframes liveUp {
+    0%{top:0}
+    5%{top: -30px}
+    10%{top: -60px}
+    15%{top: -90px}
+    20%{top: -120px}
+    25%{top: -150px}
+    30%{top: -180px}
+    35%{top: -210px}
+    40%{top: -240px}
+    45%{top: -270px}
+    50%{top: -300px}
+    55%{top: -330px}
+    60%{top: -360px}
+    65%{top: -390px}
+    70%{top: -420px}
+    75%{top: -450px}
+    80%{top: -480px}
+    85%{top: -510px}
+    90%{top: -540px}
+    95%{top: -570px}
+  }
+}
+.live_num{
+  color: $green;
+  font-size: 15px;
+  font-weight: bold;
+}
+.live_tx{
+  font-size: 13px;
+}
+.live__hv_pannel{
+  padding: 15px;
+  font-weight: bold;
+  >ul{
+    overflow: hidden;
+    >li{
+      float: left;
+      padding: 1px;
+      letter-spacing: -1px;
+    }
+    li:first-child{
+      width: 35%;
+    }
+    li:last-child{
+      width: 63%;
+    }
+  }
+}
+.live__pannel_tx{
+  font-weight: bold;
+  &:hover span{
+    text-decoration: underline;
+  }
+  >a>span{
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+}
+
+/* main*/
+.container{
+  background: rgb(242,244,247);
+}
+.main__layout_bd{
+  border: 1px solid rgb(222,227,235);
+  margin: 10px 0;
+  background: white;
+}
+.main__rt_ul{
+  >li{
+    float: left;
+  }
+  >li:first-child{
+    width: 70%;
+  }
+  >li:last-child{
+    width: 29%;
+  }
+}
+.main__rl_top{
+  height: 125px;
+}
+.main__ad_img{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  vertical-align: middle;
+}
