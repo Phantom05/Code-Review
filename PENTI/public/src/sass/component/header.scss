@@ -1,0 +1,23 @@
+/* header css*/
+/* header start */
+.header{
+  text-align: right;
+  height: 40px;
+}
+.header-nav__list{
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  >li{
+    float: left;
+    >a{
+      display: block;
+      height: 45px;
+      line-height: 60px;
+      padding-left: 15px;
+      letter-spacing: -2px;
+      font-size: 14px;
+    }
+  }
+}
+/* header end */

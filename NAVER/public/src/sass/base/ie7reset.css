@@ -45,3 +45,4 @@ blockquote, q {
 quotes: “” “”;
 }
 a{text-decoration: none;color: black;}
+input{margin: 0;}

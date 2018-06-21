@@ -1,0 +1,36 @@
+/* mixin */
+
+@mixin fontSizeWeight($size,$weight){
+  font-size: $size;
+  font-weight: $weight;
+}
+@mixin widthHeight($width,$height){
+  width: $width;
+  height: $height;
+}
+@mixin topLeft($top,$left){
+  top: $top;
+  left: $left;
+}
+@mixin topRight($top,$Right){
+  top: $top;
+  right: $Right;
+}
+@mixin customerHook1($width,$left){
+  position: absolute;
+  width: $width;
+  bottom: -20px;
+  left: $left;
+  z-index: 20;
+}
+@mixin customerHook2($width,$right){
+  position: absolute;
+  width: $width;
+  bottom: -20px;
+  right: $right;
+  z-index: 20;
+}
+@mixin tabBgfontColor(){
+  background: url('../../img/Layer 592.png') no-repeat;
+  color: white;
+}

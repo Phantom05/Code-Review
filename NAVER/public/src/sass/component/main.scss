@@ -1,12 +1,36 @@
 @import '../base/color.scss';
 
 .wrap{
-  width: 1080px;
+  width: 1100px;
   margin: auto;
-  overflow: hidden;
 }
 .ft-gr{
   color: $green;
+}
+.ft-rd{
+  color: $red;
+}
+.ft-bd{
+  font-weight: bold;
+}
+.ft-gy{
+  color: $gray;
+}
+.ft-bl{
+  color: $blue;
+}
+.ft-sk{
+  color: $sky;
+}
+.ft-ygray{
+  color: $ygray;
+}
+.blind{
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /* header start*/
@@ -50,7 +74,8 @@
   width: 495px;
   top: 0;
   left: 0;
-  padding: 15px;
+  padding: 14px 10px 9px 10px;
+  font-size: 18px;
   border: 0;
 }
 .head__search_bt{
@@ -66,6 +91,7 @@
 // nav
 .nav{
   position: relative;
+  overflow: hidden;
   border-top: 1px solid $gray;
   border-bottom: 1px solid $gray;
 }
@@ -87,10 +113,12 @@
 .nav_more_cont{
   display: none;
   position: absolute;
+  overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 300px;
   top: 40px;
   left: 0;
+  background: white;
 }
 .nav__more{
   overflow: hidden;
@@ -159,7 +187,7 @@
 .live__ul{
   position: relative;
   overflow: hidden;
-  width: 247px;
+  width: 250px;
   height: 30px;
   >li{
     position: relative;
@@ -232,20 +260,30 @@
 .container{
   background: rgb(242,244,247);
 }
+
+.container_ul{
+  // overflow: hidden;
+  >li{
+    float: none;
+  }
+}
 .main__layout_bd{
   border: 1px solid rgb(222,227,235);
   margin: 10px 0;
   background: white;
 }
 .main__rt_ul{
+  overflow: hidden;
   >li{
     float: left;
+    overflow: hidden;
   }
-  >li:first-child{
-    width: 70%;
+  .main__row_left{
+    width: 740px;
+    margin-right: 10px;
   }
-  >li:last-child{
-    width: 29%;
+  .main__row_right{
+    width: 332px;
   }
 }
 .main__rl_top{
@@ -256,4 +294,326 @@
   height: 100%;
   border: 0;
   vertical-align: middle;
+}
+.main__rl_box{
+  overflow: hidden;
+  padding: 15px 0px 5px 10px;
+  letter-spacing: -1px;
+  font-size: 13px;
+  >li{
+    float: left;
+    width: 38%;
+    &:first-child{
+      width: 58%;
+    }
+  }
+}
+// 연합뉴스
+.ct_tt{
+  width: 85px;
+  padding: 1px;
+  float: left;
+}
+.ct-ul{
+  position: relative;
+  overflow: hidden;
+  height: 20px;
+  >li{
+    position: relative;
+    padding-top: 1px;
+    top: 0px;
+    left: 0;
+    height: 20px;
+    animation: ctAd 60s 2s forwards;
+  }
+  @keyframes ctAd {
+    0%{top:0}
+    5%{top: -21px}
+    10%{top: -42px}
+    15%{top: -63px}
+    20%{top: -84px}
+    25%{top: -105px}
+    30%{top: -126px}
+    35%{top: -147px}
+    40%{top: -168px}
+    45%{top: -189px}
+  }
+}
+.ct-ad{
+  float: left;
+  width: 320px;
+}
+.ct-rul{
+  overflow: hidden;
+  float: right;
+  >li{
+    padding-top: 1px;
+    float: left;
+    margin: 0 3px;
+  }
+}
+
+//뉴스 스탠드
+.tb_menu_list{
+  overflow: hidden;
+  letter-spacing: -3px;
+  font-size: 14px;
+  font-weight: bold;
+  .tb_hgroup{
+    float: left;
+    padding: 15px ;
+    h3,h4{
+      padding-top: 1px;
+      float: left;
+    }
+  }
+  .tb_tab{
+    float: right;
+    color: gray;
+    >li{
+      cursor: pointer;
+      float: left;
+      font-size: 18px;
+      padding: 15px;
+      &:hover{
+        color: black;
+      }
+    }
+    .tb_arrow_box{
+      border: 1px solid $gray;
+      font-weight: bold;
+      &:hover{
+        color: $green;
+      }
+    }
+  }
+}
+.api_ul{
+  width: 100%;
+  overflow: hidden;
+  >li{
+    float: left;
+    width: 16.35%;
+    text-align: center;
+    border: 1px solid $gray;
+    >a{
+      display: block;
+      padding: 20px 10px;
+    }
+  }
+}
+.tb_menu_v2,.tb_menu_v3{
+  display: none;
+}
+
+
+
+// login
+.login_cont{
+  width: 90%;
+  margin: auto;
+  padding-top: 15px;
+  height: 110px;;
+}
+.login_box{
+  overflow: hidden;
+  margin-bottom: 10px;
+  >li{
+    float: left;
+    width: 49%;
+    >ul{
+      >li{
+        width: 48%;
+        float: left;
+        &:first-child{
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+
+}
+.login_form{
+  position: relative;
+}
+.main__rr_top{
+  width: 100%;
+}
+.login_input{
+  background: rgb(249,250,252);
+  border: 1px solid $gray;
+  width: 100%;
+  padding: 10px 0;
+}
+.login_bt{
+  display: block;
+  cursor: pointer;
+  background: $green;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  width: 100%;
+  height: 74px;
+  border: 0;
+}
+.login_sub{
+  padding-top: 12px;
+  height: 23px;
+  background: rgb(249,250,252);
+  letter-spacing: -2px;
+  font-size: 12px;
+  border: 1px solid $gray;
+  text-align: center;
+  .secutiry_bt{
+    background: rgb(249,250,252);
+    font-weight: bold;
+    font-size: 10px;
+    width: 30px;
+    border: 1px solid gray;
+  }
+}
+.login_state_bt{
+  background: white;
+  border: 1px solid $gray;
+}
+
+
+.login_bottom_box{
+  overflow: hidden;
+  >li{
+    float: left;
+    width: 40%;
+    padding-top:1px;
+    letter-spacing: -2px;
+    font-size: 14px;
+  }
+  .login_customer{
+    width: 59%;
+  }
+}
+
+//  rr tab
+.rr_tab{
+  overflow: hidden;
+  padding: 8px 0 8px 15px;
+  letter-spacing: -1px;
+  border-bottom: 1px solid $gray;
+  >div{
+    padding-top: 1px;
+    float: left;
+    font-size: 14px;
+  }
+}
+.rr_tab_daily{
+  width: 59%;
+}
+.rr_tab_bt{
+  position: relative;
+  width: 40%;
+  >span{
+    font-size: 12px;
+  }
+}
+.rr_tab_paging{
+  position: absolute;
+  top: 0;
+  right: 75px;
+  padding-right: 1px;
+}
+.arrow_cont{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.rr_active_tb{
+  font-weight: bold;
+}
+
+.arrow_box{
+  border: 1px solid $gray;
+  font-weight: bold;
+  padding: 8px;
+}
+//weather
+.rr_weather_box{
+  overflow: hidden;
+  padding-left: 15px;
+  .rr_weather_today{
+    float: left;
+
+    font-size: 14px;
+    // margin-top: 10px;
+  }
+  .rr_today_mountem{
+    padding-left: 20px;
+    width: 20%;
+  }
+  .rr_weather_tx{
+    font-size: 16px;
+    margin-top: 15px;
+    span{
+      margin-top: 5px;
+      font-weight: 400;
+      font-size: 13px;
+    }
+  }
+  .rr_sky_state{
+    width: 56px;
+    height: 56px;
+    margin-top: 10px;
+    background: url('../../img/weather/weather.png');
+    background-position: -66px -66px;
+  }
+  .rr_today_tem{
+    position: relative;
+    display: block;
+    font-size: 33px;
+    letter-spacing: -1px;
+    margin-top: 12px;
+    sup{
+      position: relative;
+      top: -13px;
+      right: 8px;
+      font-size: 12px;
+    }
+  }
+}
+.rr_weather_news{
+  padding:15px 10px;
+  font-size: 13px;
+  letter-spacing: -.5px;
+}
+
+
+
+
+
+
+
+/*
+footer
+*/
+.footer{
+  letter-spacing: -2px;
+  font-size: 15px;
+  h5{
+    float: left;
+  }
+}
+.footer_bd{
+  border-bottom: 1px solid $gray;
+}
+.footer_nav{
+  height: 132px;
+}
+.footer_ul{
+  overflow: hidden;
+  >li{
+    float: left;
+  }
+}
+@media (max-width:1080px){
+  .wrap{
+    width: 100%;
+  }
 }

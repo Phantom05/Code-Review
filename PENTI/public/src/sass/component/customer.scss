@@ -1,0 +1,282 @@
+@import '../modules/mixin.scss';
+@import '../base/font.scss';
+@import '../base/color.scss';
+// customer
+
+/* customer start*/
+
+.customer {
+  #customer__box {
+    height: 2140px;
+    position: relative;
+    overflow: hidden;
+  }
+  #customer__box>ul {
+    @include widthHeight(400%,100%);
+  }
+  #customer__box>ul:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #customer__box .customer__list {
+    position: relative;
+    float: left;
+    @include widthHeight(25%,100%);
+  }
+  #customer__box input {
+    display: none;
+  }
+  #customer__box label {
+    display: inline-block;
+    @include widthHeight(180px,37px);
+    background: #fff;
+    letter-spacing: -1px;
+    cursor: pointer;
+    line-height: 40px;
+    background: url('../../img/Layer 590.png') no-repeat;
+    font-weight: bold;
+  }
+  #customer__box .tab {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+  }
+  .tab{
+    padding-left: 20px;
+    border-bottom: 5px solid rgb(39,37,36);
+  }
+  .customer__tab{
+    text-align: center;
+  }
+  #tab1:checked ul {
+    margin-left: 0%;
+  }
+  #tab2:checked~ul {
+    margin-left: -100%;
+  }
+  #tab3:checked~ul {
+    margin-left: -200%;
+  }
+  #tab1:checked~.tab .tab_v1{
+    @include tabBgfontColor();
+  }
+  #tab2:checked~.tab .tab_v2{
+    @include tabBgfontColor();
+  }
+  #tab3:checked~.tab .tab_v3 {
+    @include tabBgfontColor();
+  }
+  .customer__task{
+    margin-top: 70px;
+    >li{
+      background: rgb(241,241,241);
+    }
+    .customer__inner-box{
+      position: relative;
+      background: white;
+      height: 480px;
+      margin: 10px 0;
+      padding: 0 50px;
+      z-index: 2;
+      .customer__hook1{
+        @include customerHook1(30px,28%);
+      }
+      .customer__hook2{
+        @include customerHook2(30px,28%);
+      }
+    }
+    .customer__inner-box2{
+      position: relative;
+      background: url('../../img/ㅈㅈㅈ.png') no-repeat 100%;
+      height: 360px;
+      margin: 10px 0;
+      z-index: 1;
+      .customer__hook1{
+        @include customerHook1(35px,30%);
+      }
+      .customer__hook2{
+        @include customerHook2(35px,30%);
+      }
+      .resum{
+        display: block;
+        margin:auto;
+        width: 95%;
+        padding-top: 17px;
+      }
+      .customer__list_img{
+        margin-left: 10px;
+        width: 120px;
+      }
+      .customer__inner-ul{
+        width: 90%;
+        margin: auto;
+        >li{
+          width: 16%;
+          float: left;
+        }
+      }
+      .customer__how{
+        margin: 20px 0 10px 45px;
+      }
+    }
+    .customer__inner-box3{
+      position: relative;
+      background: url('../../img/picture_part/Layer 593.png') no-repeat 100%;
+      height: 1180px;
+      margin: 10px 0;
+      z-index: 0;
+      color: rgb(82,82,82);
+      .customer__box3_header{
+        margin: auto;
+        @include widthHeight(99%,150px);
+        background: url('../../img/picture_part/Layer 567.png') no-repeat;
+        background-position-y: 5px;
+        text-align: center;
+      }
+      .customer__h3{
+        padding-top: 20px;
+        font-size: 55px;
+      }
+      .customer__p{
+        color: rgb(161,161,161);
+        font-weight: bold;
+        padding-left: 70px;
+      }
+      .customer__picture_part{
+        position: relative;
+        width: 95%;
+        margin: auto;
+        background: url('../../img/adbox_info_v1.png') no-repeat 100%;
+      
+        height: 400px;
+        .picture__text{
+          position: absolute;
+          right: 20px;
+          top: -6px;
+          @include widthHeight(135px,70px);
+          background: url('../../img/picture_pc.png') no-repeat 100%;
+          text-align: center;
+          margin-left: 5px;
+          color: white;
+          @include fontSizeWeight(22px,bold);
+          line-height: 65px;
+          letter-spacing: -1px;
+        }
+      }
+        .picture__price_img{
+          position: absolute;
+          width: 98%;
+          left: 1%;
+          bottom: 10px;
+          text-align: center;
+        }
+    }
+    .customer__reivew{
+      .review-ul{
+        overflow: hidden;
+        height: 100px;
+        >li{
+          text-align: center;
+          float: left;
+          margin-top: 10px;
+          >p{
+            font-size: 11px;
+            font-weight: bold;
+            color: rgb(127,127,127);
+            letter-spacing: -1px;
+          }
+        }
+      }
+      .customer_img_check{
+        margin-top: 20px;
+        margin-right:40px; 
+      }
+    }
+    .customer_img{
+      width: 55px;
+      margin: 0 6px;
+    }
+    .customer__condi{
+      position: relative;
+      height: 380px;
+      background: url('../../img/wwgb.png') no-repeat 100%;
+      background-position: 50%;
+      >li{
+        float: left;
+        width: 50%;
+      }
+      .customer__text_title{
+        position: relative;
+        @include fontSizeWeight(15px,bold);
+        color: rgb(84,84,84);
+        margin: 15px 0;
+        letter-spacing: -1px;
+        .check_arrow{
+          position: absolute;
+          left: -30px;
+          top: 0;
+        }
+      }
+      .customer__text{
+        position: relative;
+        font-size: 14px;
+        color: rgb(138,138,138);
+        margin: 15px 0;
+        letter-spacing: -1px;
+        .check_arrow{
+          position: absolute;
+          left: -30px;
+          top: 0;
+        }
+      }
+      .www{
+        position: absolute;
+        width: 200px;
+        left: 350px;
+        top: 0;
+      }
+    }
+  }
+}
+
+/* customer end */
+
+/* picture start */
+
+.picture{
+  margin-top: 30px;
+  height: 875px;
+  margin-bottom: 30px;
+  background: white;
+  text-align: center;
+  .picture__title{
+    padding-top: 50px;
+    font-size: 27px;
+  }
+  .picture__info{
+    font-size: 30px;
+  }
+  .picture__travel{
+    margin-top: 40px;
+    position: relative;
+    font-size: 30px;
+    color: #8497bb;
+  }
+  .picture__img{
+    margin-top: 50px;
+  }
+  .dotdot{
+    margin-top: 20px;
+    line-height: 20px;
+    @include fontSizeWeight(25px,bold);
+  }
+  .beauty{
+    position: absolute;
+    left: 55%;
+    margin-top: 10px;
+  }
+}
+
+/* picture end */

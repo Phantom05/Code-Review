@@ -1,0 +1,99 @@
+@import '../modules/mixin.scss';
+@import '../base/font.scss';
+@import '../base/color.scss';
+//main menu
+
+/* main menu start */
+
+.menu{
+  text-align: center;
+  height: 347px;
+}
+.nav-ul{
+  display: inline-block;
+  width: 746px;
+  >.nav-li{
+    float: left;
+    text-align: center;
+    @include widthHeight(101px,40px);
+    line-height: 40px;
+    cursor: pointer;
+    margin: 0 2.4px;
+    @include fontSizeWeight(16px,bold);
+    background: #ececec;
+    &:hover{
+      background: $purple;
+      color: $white;
+    }
+  }
+  .con{
+    position: relative;
+    top:-100%;
+  }
+}
+.count__box{
+  display: inline-block;
+  position: relative;
+  height: 35px;
+  top: -18px;
+  left: 4px;
+  >.count{
+    position: absolute;
+    @include widthHeight(100%,35px);
+    left: -1px;
+    top:-8px;
+    @include fontSizeWeight(13px,bold);
+    color: $white;
+    text-align: center;
+  }
+}
+// submenu
+.submenu{
+  display: none;
+  position: absolute;
+  top: 129px;
+  left: 0;
+  @include widthHeight(100%,300px);
+  background: rgb(39,37,36);
+  border-top: 6px solid $purple;
+  z-index: 10;
+  >.submenu-li{
+    position: relative;
+    float: left;
+    line-height: 15px;
+    @include widthHeight(19%,285px);//width 20%
+    color: $white;
+    text-align: left;
+    border-right:1px solid rgb(88,88,88);
+    padding-top: 15px;
+    padding-left: 9px;
+  }
+}
+.nav-li:hover>.submenu{
+  display: block;
+}
+.inner-ul{
+  width: 100%;
+  padding-top: 10px;
+  >li{
+    @include widthHeight(100%,20px);
+    &:hover{
+      background: orange;
+    }
+    >a{
+      text-align: center;
+      color: $white;
+      @include fontSizeWeight(12px,100);
+      margin: 0 2px;
+    }
+    >img{
+      margin:0 2px;
+    }
+  }
+}
+.basicShow{
+  display: block;
+  z-index: 2;
+}
+
+/* main menu end */
