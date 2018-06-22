@@ -87,11 +87,13 @@
   border-top: 1px solid #f1f3f6;
   border-bottom: 1px solid #f1f3f6; }
 
-.nav__ul > li {
-  cursor: pointer;
-  float: left; }
-  .nav__ul > li > a {
-    letter-spacing: -2px; }
+.nav__ul {
+  overflow: hidden; }
+  .nav__ul > li {
+    cursor: pointer;
+    float: left; }
+    .nav__ul > li > a {
+      letter-spacing: -2px; }
 
 .nav_ft {
   display: block;
@@ -105,8 +107,9 @@
   overflow: hidden;
   width: 100%;
   height: 300px;
-  top: 40px;
+  top: 256px;
   left: 0;
+  z-index: 500;
   background: white; }
 
 .nav__more {
@@ -129,11 +132,11 @@
 
 .nav__opacity {
   display: none;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 100%;
+  height: 155%;
   left: 0;
-  top: 580px;
+  top: 556px;
   background: black;
   opacity: .1; }
 
@@ -538,12 +541,25 @@
 /*
 theme cast
 */
+.themecast {
+  border: 1px solid #dee3eb;
+  background: white; }
+
 .themecast_tab {
   overflow: hidden; }
   .themecast_tab .themecast_tab_ul {
     overflow: hidden; }
     .themecast_tab .themecast_tab_ul > li {
       float: left; }
+
+.shp_cst {
+  height: 882px;
+  background: white;
+  border: 1px solid #dee3eb; }
+  .shp_cst iframe {
+    overflow: hidden;
+    width: 330px;
+    height: 882px; }
 
 /*
 EMPTY
@@ -585,12 +601,13 @@ EMPTY
   height: 120px; }
 
 .papen_ad > img {
-  border: 0; }
+  border: 1px solid #dee3eb; }
 
 /*
 footer
 */
 .footer {
+  border: 1px solid #dee3eb;
   letter-spacing: -2px;
   font-size: 15px; }
 

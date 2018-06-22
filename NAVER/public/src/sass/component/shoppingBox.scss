@@ -1,0 +1,175 @@
+/*
+shopping box
+*/
+
+.ft-bd{
+  font-weight: bold;
+}
+.ft-gr{
+  color:rgb(0,199,60);
+}
+.ft-pp{
+  color:#8974d7;
+}
+.shop_wrap{
+  position: relative;
+  width: 330px;
+  height: 882px;
+}
+.blind{
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+}
+//header
+.shop_header{
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(241,243,246);
+}
+.shop_header_box{
+  float: left;
+  width: 49.5%;
+  letter-spacing: -3px;
+  h1>a{
+    display: block;
+    padding:10px 10px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  ul>li{
+    float: left;
+    >a{
+      display: block;
+      padding:10px 10px;
+      color: gray;
+      font-weight: bold;
+      font-size: 14px;
+      &:hover{
+        color: black;
+      }
+    }
+    .shop_active{
+      font-weight: bold;
+      color: black;
+    }
+  }
+}
+// mall list
+.malllist{
+  border-bottom: 1px solid rgb(241,243,246);
+  padding:15px 10px;
+  letter-spacing: -1px;
+  div a{
+    font-size: 13px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+// 상품 광고 영역
+.contents_memAd{
+  position: relative;
+  padding: 38px 0 5px 10px;
+  border-bottom: 1px solid rgb(241,243,246);
+}
+.shop_paging{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 50px;
+  color: gray;
+  em{
+    float: left;
+    font-size: 12px;
+    margin:5px 10px 0 0
+  }
+  strong{
+    color: black;
+  }
+  >a{
+    display:block;
+    border: 1px solid rgb(241,243,246);
+    text-align: center;
+    height: 23px;
+    width: 23px;
+    float: left;
+  }
+}
+// 상품 리스트
+.shop_contents_ul{
+  overflow: hidden;
+  background: white;
+  li{
+    float: left;
+    width: 94px;
+    margin:4px 4px 10px 4px;
+    overflow: hidden;
+    &:hover span{
+      text-decoration: underline;
+    }
+    &:hover img{
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s;
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    .shop_mw{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+.shop_content_tx{
+  margin-top: 5px;
+  span{
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -2px;
+  }
+}
+
+// 상품 베너
+.shop_banner{
+  letter-spacing: -1px;
+  padding: 10px;
+}
+.shop_banner_title{
+  position: relative;
+  padding: 2px 0;
+  h4{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .shop_title_stick{
+    display: inline-block;
+    width: 3px;
+    height: 11px;
+    background: #8974d7;
+  }
+  a{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 5px;
+    border: 1px solid rgb(241,243,246);
+  }
+}
+.shop_banner_list{
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 24px;
+  ul>li:hover a{
+    text-decoration: underline;
+  }
+}

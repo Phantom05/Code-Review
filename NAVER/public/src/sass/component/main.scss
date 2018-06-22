@@ -96,6 +96,7 @@
   border-bottom: 1px solid $gray;
 }
 .nav__ul{
+  overflow: hidden;
   >li{
     cursor: pointer;
     float: left;
@@ -116,8 +117,9 @@
   overflow: hidden;
   width: 100%;
   height: 300px;
-  top: 40px;
+  top: 256px;
   left: 0;
+  z-index: 500;
   background: white;
 }
 .nav__more{
@@ -144,11 +146,11 @@
 }
 .nav__opacity{
   display: none;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 100%;
+  height: 155%;
   left: 0;
-  top: 580px;
+  top: 556px;
   background: black;
   opacity: .1;
 }
@@ -590,6 +592,10 @@
 theme cast
 */
 //theme cast tab
+.themecast{
+  border: 1px solid #dee3eb;
+  background: white;
+}
 .themecast_tab{
   overflow: hidden;
   .themecast_tab_ul{
@@ -602,6 +608,18 @@ theme cast
 
 
 
+// shoppingBox
+// iframe
+.shp_cst{
+  height: 882px;
+  background: white;
+  border: 1px solid #dee3eb;
+  iframe{
+    overflow: hidden;
+    width: 330px;
+    height: 882px;
+  }
+}
 
 /*
 EMPTY
@@ -650,13 +668,14 @@ EMPTY
 }
 .papen_ad{
   >img{
-    border: 0;
+    border: 1px solid #dee3eb;
   }
 }
 /*
 footer
 */
 .footer{
+  border: 1px solid #dee3eb;
   letter-spacing: -2px;
   font-size: 15px;
 }

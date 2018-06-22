@@ -1,0 +1,145 @@
+/*
+shopping box
+*/
+.ft-bd {
+  font-weight: bold; }
+
+.ft-gr {
+  color: #00c73c; }
+
+.ft-pp {
+  color: #8974d7; }
+
+.shop_wrap {
+  position: relative;
+  width: 330px;
+  height: 882px; }
+
+.blind {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px; }
+
+.shop_header {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #f1f3f6; }
+
+.shop_header_box {
+  float: left;
+  width: 49.5%;
+  letter-spacing: -3px; }
+  .shop_header_box h1 > a {
+    display: block;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 14px; }
+  .shop_header_box ul > li {
+    float: left; }
+    .shop_header_box ul > li > a {
+      display: block;
+      padding: 10px 10px;
+      color: gray;
+      font-weight: bold;
+      font-size: 14px; }
+      .shop_header_box ul > li > a:hover {
+        color: black; }
+    .shop_header_box ul > li .shop_active {
+      font-weight: bold;
+      color: black; }
+
+.malllist {
+  border-bottom: 1px solid #f1f3f6;
+  padding: 15px 10px;
+  letter-spacing: -1px; }
+  .malllist div a {
+    font-size: 13px; }
+    .malllist div a:hover {
+      text-decoration: underline; }
+
+.contents_memAd {
+  position: relative;
+  padding: 38px 0 5px 10px;
+  border-bottom: 1px solid #f1f3f6; }
+
+.shop_paging {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 50px;
+  color: gray; }
+  .shop_paging em {
+    float: left;
+    font-size: 12px;
+    margin: 5px 10px 0 0; }
+  .shop_paging strong {
+    color: black; }
+  .shop_paging > a {
+    display: block;
+    border: 1px solid #f1f3f6;
+    text-align: center;
+    height: 23px;
+    width: 23px;
+    float: left; }
+
+.shop_contents_ul {
+  overflow: hidden;
+  background: white; }
+  .shop_contents_ul li {
+    float: left;
+    width: 94px;
+    margin: 4px 4px 10px 4px;
+    overflow: hidden; }
+    .shop_contents_ul li:hover span {
+      text-decoration: underline; }
+    .shop_contents_ul li:hover img {
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s;
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+    .shop_contents_ul li .shop_mw img {
+      width: 100%; }
+
+.shop_content_tx {
+  margin-top: 5px; }
+  .shop_content_tx span {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -2px; }
+
+.shop_banner {
+  letter-spacing: -1px;
+  padding: 10px; }
+
+.shop_banner_title {
+  position: relative;
+  padding: 2px 0; }
+  .shop_banner_title h4 {
+    font-size: 14px;
+    font-weight: bold; }
+  .shop_banner_title .shop_title_stick {
+    display: inline-block;
+    width: 3px;
+    height: 11px;
+    background: #8974d7; }
+  .shop_banner_title a {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding: 5px;
+    border: 1px solid #f1f3f6; }
+
+.shop_banner_list {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 24px; }
+  .shop_banner_list ul > li:hover a {
+    text-decoration: underline; }
