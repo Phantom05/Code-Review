@@ -167,9 +167,13 @@ shopping box
 }
 .shop_banner_list{
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 24px;
+  letter-spacing: -1px;
   ul>li:hover a{
     text-decoration: underline;
+  }
+  .bn-title{
+    margin-right: 10px;
   }
 }
