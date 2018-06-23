@@ -357,13 +357,14 @@
 
 //뉴스 스탠드
 .tb_menu_list{
+  position: relative;
   overflow: hidden;
   letter-spacing: -3px;
   font-size: 14px;
   font-weight: bold;
   .tb_hgroup{
     float: left;
-    padding: 15px ;
+    padding: 15px;
     h3,h4{
       padding-top: 1px;
       float: left;
@@ -372,15 +373,17 @@
   .tb_tab{
     float: right;
     color: gray;
-    >li{
+    margin-right: 110px;
+    >.tb_sub_tab{
       cursor: pointer;
       float: left;
       font-size: 18px;
-      padding: 15px 18px;
+      padding: 10px 12px;
       &:hover{
         color: black;
       }
     }
+
     .tb_arrow_box{
       border: 1px solid $gray;
       font-weight: bold;
@@ -597,15 +600,70 @@ theme cast
   background: white;
 }
 .themecast_tab{
+  position: relative;
   overflow: hidden;
+  letter-spacing: -2px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid $gray;
   .themecast_tab_ul{
+    width: 1600px;
+    padding-left: 12px;
     overflow: hidden;
     >li{
       float: left;
+      >a{
+        display: block;
+        padding: 15px 8px;
+        margin-right: 6px;
+      }
     }
   }
 }
 
+.themecast__toggle_tab{
+    display: inline-block;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border: 1px solid $gray;
+    .ac_bicon{
+      position: absolute;
+      top: 15px;
+      left: 12px;
+      width: 20px;
+      height: 14px;
+      background: url('../../img/head/tabicon.png') no-repeat;
+      background-position: -218px -257px;
+    }
+}
+.themecast_main_tab{
+  position: absolute;
+  width: 600px;
+  height: 45px;
+  top: 0;
+  left: 45px;
+  overflow: hidden;
+}
+
+
+.arrow_box_cont{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.arrow_ab_box{
+  display: block;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: 1px solid $gray;
+  text-align: center;
+  line-height: 44px;
+  font-weight: bold;
+  float: left;
+  padding: 0;
+}
 
 
 // shoppingBox

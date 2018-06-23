@@ -349,6 +349,7 @@
     margin: 0 3px; }
 
 .tb_menu_list {
+  position: relative;
   overflow: hidden;
   letter-spacing: -3px;
   font-size: 14px;
@@ -361,13 +362,14 @@
       float: left; }
   .tb_menu_list .tb_tab {
     float: right;
-    color: gray; }
-    .tb_menu_list .tb_tab > li {
+    color: gray;
+    margin-right: 110px; }
+    .tb_menu_list .tb_tab > .tb_sub_tab {
       cursor: pointer;
       float: left;
       font-size: 18px;
-      padding: 15px 18px; }
-      .tb_menu_list .tb_tab > li:hover {
+      padding: 10px 12px; }
+      .tb_menu_list .tb_tab > .tb_sub_tab:hover {
         color: black; }
     .tb_menu_list .tb_tab .tb_arrow_box {
       border: 1px solid #f1f3f6;
@@ -546,11 +548,62 @@ theme cast
   background: white; }
 
 .themecast_tab {
-  overflow: hidden; }
+  position: relative;
+  overflow: hidden;
+  letter-spacing: -2px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #f1f3f6; }
   .themecast_tab .themecast_tab_ul {
+    width: 1600px;
+    padding-left: 12px;
     overflow: hidden; }
     .themecast_tab .themecast_tab_ul > li {
       float: left; }
+      .themecast_tab .themecast_tab_ul > li > a {
+        display: block;
+        padding: 15px 8px;
+        margin-right: 6px; }
+
+.themecast__toggle_tab {
+  display: inline-block;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #f1f3f6; }
+  .themecast__toggle_tab .ac_bicon {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 20px;
+    height: 14px;
+    background: url("../../img/head/tabicon.png") no-repeat;
+    background-position: -218px -257px; }
+
+.themecast_main_tab {
+  position: absolute;
+  width: 600px;
+  height: 45px;
+  top: 0;
+  left: 45px;
+  overflow: hidden; }
+
+.arrow_box_cont {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.arrow_ab_box {
+  display: block;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #f1f3f6;
+  text-align: center;
+  line-height: 44px;
+  font-weight: bold;
+  float: left;
+  padding: 0; }
 
 .shp_cst {
   height: 882px;
