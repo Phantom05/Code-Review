@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../sass/base/ie7reset.css">
   <link rel="stylesheet" href="../sass/component/shoppingBox.css">
   <title>Document</title>
+
 </head>
 
 <body>
@@ -20,24 +21,24 @@
           <a href="">쇼핑</a>
         </h1>
       </div>
-      <div class="shop_header_box">
+      <div  id="tabBox" class="shop_header_box">
         <ul>
           <li>
-            <a id="productTab" href="" class="shop_active">상품</a>
+            <a id="productTab" href="" class="shop_active mainTab">상품</a>
           </li>
           <li>
-            <a id="mallTab" href="">쇼핑몰</a>
+            <a id="mallTab" href="" class="mainTab">쇼핑몰</a>
           </li>
           <li>
-            <a id="menTab" href="">MEN</a>
+            <a id="menTab" href="" class="mainTab">MEN</a>
           </li>
         </ul>
       </div>
     </div>
 
-    <!-- mall list -->
-    <div class="shop_content">
-      <h3 class="blind">멘즈</h3>
+    <!-- product mall list -->
+    <div id="productShopContent" class="shop_content tabActive ">
+      <h3 class="blind">상품</h3>
       <div class="malllist">
         <div class="malllist1">
           <a href="">G마켓</a><span class="ls5">·</span>
@@ -101,8 +102,8 @@
       </div>
     </div>
 
-    <!-- shop banner -->
-    <div class="shop_banner">
+    <!-- product shop banner -->
+    <div id="productShopBanner" class="shop_banner tabActive ">
       <div class="shop_banner_title">
         <h4 class="">
           <span class="shop_title_stick"></span> 반갑다! 쇼핑뉴스</h4>
@@ -123,15 +124,255 @@
       </div>
 
     </div>
+   
+    <!-- shopmall list -->
+    <div id="shopMallContent" class="mall_content ">shopmall activeshopmall</div>
+ 
+    <!-- shopmall banner -->
+    <div id="shopMallBanner" class="mall_banner ">shopmall banner active</div>
+  
+    <!-- Men list -->
+    <div id="MENConent" class="MEN_content ">
+        <h3 class="blind">멘즈</h3>
+        <div class="malllist">
+          <div class="malllist1">
+            <a href="">G마켓</a><span class="ls5">·</span>
+            <a href="">옥션</a>
+            <span class="ls5">·</span>
+            <a href="">
+              <strong class="ft-bd">11번가</strong></a><span class="ls5">·</span>
+            <a href="">위메프 </a>
+            <span class="ls5">·</span>
+            <a href="">티몬 </a>
+            <span class="ls5">·</span>
+            <a href="">이마트몰 </a>
+            <span class="ls5">·</span>
+            <a href="">
+              <strong class="ft-bd">신세계몰</strong>
+            </a>
+          </div>
+          <div class="malllist2">
+            <a href="">GS샵</a>
+            <span class="ls5">·</span>
+            <a href="">롯데닷컴 </a>
+            <span class="ls5">·</span>
+            <a href="">롯데i몰 </a>
+            <span class="ls5">·</span>
+            <a href="">
+              <strong class="ft-bd">CJmall</strong>
+            </a>
+            <span class="ls5">·</span>
+            <a href="">현대H몰 </a>
+            <span class="ls5">·</span>
+            <a href="">올리브영 </a>
+          </div>
+        </div>
+        <!-- MEN product -->
+        <div class="contents_mens">
+          <div class="shop_paging">
+            <em class="pagind_em">
+              <strong class="ft-bd">1</strong>
+              <span>/4</span>
+            </em>
+            <a href="" class="shop_prev">
+              <span class="blind">이전 리스트</span>
+              ＜
+            </a>
+            <a href="" class="shop_next">
+              <span class="blind">다음 리스트</span>
+              ＞
+            </a>
+          </div>
+          <ul class="contents_mens_ul">
+            <li class="mens_content_list"><a href="">
+              <div class="ms_md">
+                <img src="../img/MENContentList/sh1.jpg" alt="">
+              </div>
+              <p class="mens_tx">
+                <span>단 일주일 1+1</span>
+                <span>슬랙스 3만원대!</span>
+              </p>
+            </a></li>
+            <li class="mens_content_list"><a href="">
+                <div>
+                  <img src="../img/MENContentList/sh1.jpg" alt="">
+                </div>
+                <p class="mens_tx">
+                  <span>
+                    단 일주일 1+1
+                  </span>
+                  <span>
+                    슬랙스 3만원대!
+                  </span>
+                </p>
+            </a></li>
+            <li class="mens_content_list"><a href="">
+                <div>
+                    <img src="../img/MENContentList/sh1.jpg" alt="">
+                  </div>
+                  <p class="mens_tx">
+                    <span>
+                      단 일주일 1+1
+                    </span>
+                    <span>
+                      슬랙스 3만원대!
+                    </span>
+                  </p>
+            </a></li>
+            <li class="mens_content_list"><a href="">
+                <div>
+                    <img src="../img/MENContentList/sh1.jpg" alt="">
+                  </div>
+                  <p class="mens_tx">
+                    <span>
+                      단 일주일 1+1
+                    </span>
+                    <span>
+                      슬랙스 3만원대!
+                    </span>
+                  </p>
+            </a></li>
+            <li class="mens_content_list"><a href="">
+                <div>
+                    <img src="../img/MENContentList/sh1.jpg" alt="">
+                  </div>
+                  <p class="mens_tx">
+                    <span>
+                      단 일주일 1+1
+                    </span>
+                    <span>
+                      슬랙스 3만원대!
+                    </span>
+                  </p>
+            </a></li>
+            <li class="mens_content_list"><a href="">
+                <div>
+                    <img src="../img/MENContentList/sh1.jpg" alt="">
+                  </div>
+                  <p class="mens_tx">
+                    <span>
+                      단 일주일 1+1
+                    </span>
+                    <span>
+                      슬랙스 3만원대!
+                    </span>
+                  </p>
+            </a></li>
+            <li class="mens_content_list"><a href="">
+                <div>
+                    <img src="../img/MENContentList/sh1.jpg" alt="">
+                  </div>
+                  <p class="mens_tx">
+                    <span>
+                      단 일주일 1+1
+                    </span>
+                    <span>
+                      슬랙스 3만원대!
+                    </span>
+                  </p>
+            </a></li>
+            <li class="mens_content_list"><a href="">
+                <div>
+                    <img src="../img/MENContentList/sh1.jpg" alt="">
+                  </div>
+                  <p class="mens_tx">
+                    <span>
+                      단 일주일 1+1
+                    </span>
+                    <span>
+                      슬랙스 3만원대!
+                    </span>
+                  </p>
+            </a></li>
+            <li class="mens_content_list"><a href="">
+                <div>
+                    <img src="../img/MENContentList/sh1.jpg" alt="">
+                  </div>
+                  <p class="mens_tx">
+                    <span>
+                      단 일주일 1+1
+                    </span>
+                    <span>
+                      슬랙스 3만원대!
+                    </span>
+                  </p>
+            </a></li>
+          </ul>
+        </div>
+
+    </div>
+
+    <!-- MEN  banner-->
+    <div id="MENBanner" class="MEN_banner ">
+      MEN banner active
+
+    </div>
   </div>
 
   <script>
-    window.onload = function () {
+      document.addEventListener('DOMContentLoaded',function(){
+
       const productTab =document.getElementById('productTab');
       const mallTab = document.getElementById('mallTab');
       const menTab =document.getElementById('menTab');
 
+      const productContent  =document.getElementById('productShopContent');
+      const productBanner = document.getElementById('productShopBanner');
 
+      const MallContent=document.getElementById('shopMallContent');
+      const MallBanner=document.getElementById('shopMallBanner');
+
+      const MENConent =document.getElementById('MENConent');
+      const MENBanner=document.getElementById('MENBanner');
+
+      const tabBox = document.getElementById('tabBox');
+      const mainTab =document.getElementsByClassName('mainTab');
+
+      const allMenu =document.getElementsByClassName('allMenu');
+
+      productTab.addEventListener('click',function(e){tabChange(e)})
+      mallTab.addEventListener('click',function(e){tabChange(e)})
+      menTab.addEventListener('click',function(e){tabChange(e)})
+
+      function tabChange(e){
+        e.preventDefault();
+
+        if(e.target.id === 'productTab'){
+
+          productContent.classList.add('tabActive');
+          productBanner.classList.add('tabActive');
+
+          MENConent.classList.remove('tabActive');
+          MENBanner.classList.remove('tabActive');
+
+          MallContent.classList.remove('tabActive');
+          MallBanner.classList.remove('tabActive');
+        }else if (e.target.id ==='mallTab'){
+
+          MallContent.classList.add('tabActive');
+          MallBanner.classList.add('tabActive');
+
+          MENConent.classList.remove('tabActive');
+          MENBanner.classList.remove('tabActive');
+
+          productContent.classList.remove('tabActive');
+          productBanner.classList.remove('tabActive');
+        }else if (e.target.id ==='menTab'){
+
+          MENConent.classList.add('tabActive');
+          MENBanner.classList.add('tabActive');
+
+          MallContent.classList.remove('tabActive');
+          MallBanner.classList.remove('tabActive');
+
+          productContent.classList.remove('tabActive');
+          productBanner.classList.remove('tabActive');
+        }
+      }
+
+
+      // product func
+      function productFunc(){
       //shop_banner_item
       const shopBannerList = [
         {
@@ -521,7 +762,8 @@
           ]
         },
         {
-          shopContentList: [{
+          shopContentList: [
+            {
               img: '../img/shoppingBox/sh28.jpg',
               text1: '필드위의 여신',
               text2: '반응완전 최고',
@@ -576,7 +818,588 @@
               url: 'https://www.naver.com36',
             },
           ]
-        }
+        },
+        {
+          shopContentList: [
+            {
+              img: '../img/shoppingBox/sh1.jpg',
+              text1: '올리자마자~',
+              text2: '인기폭발신상',
+              url: 'https://www.naver.com1',
+            },
+            {
+              img: '../img/shoppingBox/sh2.jpg',
+              text1: '감각적 디자인',
+              text2: '다들~뒤돌아봐',
+              url: 'https://www.naver.com2',
+            },
+            {
+              img: '../img/shoppingBox/sh3.jpg',
+              text1: '휘게 전상품',
+              text2: '20%특가할인!',
+              url: 'https://www.naver.com3',
+            },
+            {
+              img: '../img/shoppingBox/sh4.jpg',
+              text1: '이게뭐길래~',
+              text2: '쿨링감폭발해?',
+              url: 'https://www.naver.com4',
+            },
+            {
+              img: '../img/shoppingBox/sh5.jpg',
+              text1: '고급스러운~',
+              text2: '명품스타일~',
+              url: 'https://www.naver.com5',
+            },
+            {
+              img: '../img/shoppingBox/sh6.jpg',
+              text1: '모두들 극찬해',
+              text2: '인생 생리대',
+              url: 'https://www.naver.com6',
+            },
+            {
+              img: '../img/shoppingBox/sh7.jpg',
+              text1: '시원하게~',
+              text2: '피로를 싺~',
+              url: 'https://www.naver.com7',
+            },
+            {
+              img: '../img/shoppingBox/sh8.jpg',
+              text1: '퀄리티~좋아요',
+              text2: '전상품 5%',
+              url: 'https://www.naver.com8',
+            },
+            {
+              img: '../img/shoppingBox/sh9.jpg',
+              text1: '볼륨감원해?',
+              text2: '나를 입어봐~',
+              url: 'https://www.naver.com9',
+            },
+          ]
+        },
+        {
+          shopContentList: [
+            {
+              img: '../img/shoppingBox/sh10.jpg',
+              text1: '대체불가 핏감',
+              text2: '후회없는 선택',
+              url: 'https://www.naver.com10',
+            },
+            {
+              img: '../img/shoppingBox/sh11.jpg',
+              text1: '올리자마자~',
+              text2: '인기폭발신상',
+              url: 'https://www.naver.com11',
+            },
+            {
+              img: '../img/shoppingBox/sh12.jpg',
+              text1: '차원이다르죠?',
+              text2: '안사면 후회해',
+              url: 'https://www.naver.com12',
+            },
+            {
+              img: '../img/shoppingBox/sh13.jpg',
+              text1: '허기진 밤을',
+              text2: '달래줄 98kcal',
+              url: 'https://www.naver.com13',
+            },
+            {
+              img: '../img/shoppingBox/sh14.jpg',
+              text1: '원단좋고 시원',
+              text2: '브랜드 그이상',
+              url: 'https://www.naver.com14',
+            },
+            {
+              img: '../img/shoppingBox/sh15.jpg',
+              text1: 'ALL SALE',
+              text2: '지금이 기회!',
+              url: 'https://www.naver.com15',
+            },
+            {
+              img: '../img/shoppingBox/sh16.jpg',
+              text1: '농심라면 특가',
+              text2: '오늘만이가격!',
+              url: 'https://www.naver.com16',
+            },
+            {
+              img: '../img/shoppingBox/sh17.jpg',
+              text1: '세련미 폭발!',
+              text2: '여름이 더예뻐',
+              url: 'https://www.naver.com17',
+            },
+            {
+              img: '../img/shoppingBox/sh18.jpg',
+              text1: '헉! 색소침착',
+              text2: '100%환불가능',
+              url: 'https://www.naver.com18',
+            },
+          ]
+        },
+        {
+          shopContentList: [
+            {
+              img: '../img/shoppingBox/sh19.jpg',
+              text1: '필드위의 여신',
+              text2: '반응완전 최고',
+              url: 'https://www.naver.com19',
+            },
+            {
+              img: '../img/shoppingBox/sh20.jpg',
+              text1: '헬로월드',
+              text2: '헬로월드',
+              url: 'https://www.naver.com20',
+            },
+            {
+              img: '../img/shoppingBox/sh21.jpg',
+              text1: '헬로월드',
+              text2: '헬로월드',
+              url: 'https://www.naver.com21',
+            },
+            {
+              img: '../img/shoppingBox/sh22.jpg',
+              text1: '모공축소 세럼',
+              text2: '40% 한정특가!',
+              url: 'https://www.naver.com22',
+            },
+            {
+              img: '../img/shoppingBox/sh23.jpg',
+              text1: '지금이 기회~!',
+              text2: 'EVENT SALE~!',
+              url: 'https://www.naver.com23',
+            },
+            {
+              img: '../img/shoppingBox/sh24.jpg',
+              text1: '썸머세트인기',
+              text2: '고민없이예뻐',
+              url: 'https://www.naver.com24',
+            },
+            {
+              img: '../img/shoppingBox/sh25.jpg',
+              text1: '쓰임 총결산',
+              text2: '최대 56%↓',
+              url: 'https://www.naver.com25',
+            },
+            {
+              img: '../img/shoppingBox/sh26.jpg',
+              text1: '센스있는 코디',
+              text2: '자신감 급상승',
+              url: 'https://www.naver.com26',
+            },
+            {
+              img: '../img/shoppingBox/sh27.jpg',
+              text1: '침구심야특가!',
+              text2: '지금이 기회~',
+              url: 'https://www.naver.com27',
+            },
+          ]
+        },
+        {
+          shopContentList: [
+            {
+              img: '../img/shoppingBox/sh28.jpg',
+              text1: '필드위의 여신',
+              text2: '반응완전 최고',
+              url: 'https://www.naver.com28',
+            },
+            {
+              img: '../img/shoppingBox/sh29.jpg',
+              text1: '헬로월드',
+              text2: '헬로월드',
+              url: 'https://www.naver.com29',
+            },
+            {
+              img: '../img/shoppingBox/sh30.jpg',
+              text1: '헬로월드',
+              text2: '헬로월드',
+              url: 'https://www.naver.com30',
+            },
+            {
+              img: '../img/shoppingBox/sh31.jpg',
+              text1: '모공축소 세럼',
+              text2: '40% 한정특가!',
+              url: 'https://www.naver.com31',
+            },
+            {
+              img: '../img/shoppingBox/sh32.jpg',
+              text1: '지금이 기회~!',
+              text2: 'EVENT SALE~!',
+              url: 'https://www.naver.com32',
+            },
+            {
+              img: '../img/shoppingBox/sh33.jpg',
+              text1: '썸머세트인기',
+              text2: '고민없이예뻐',
+              url: 'https://www.naver.com33',
+            },
+            {
+              img: '../img/shoppingBox/sh34.jpg',
+              text1: '쓰임 총결산',
+              text2: '최대 56%↓',
+              url: 'https://www.naver.com34',
+            },
+            {
+              img: '../img/shoppingBox/sh35.jpg',
+              text1: '센스있는 코디',
+              text2: '자신감 급상승',
+              url: 'https://www.naver.com35',
+            },
+            {
+              img: '../img/shoppingBox/sh36.jpg',
+              text1: '침구심야특가!',
+              text2: '지금이 기회~',
+              url: 'https://www.naver.com36',
+            },
+          ]
+        },
+        {
+          shopContentList: [
+            {
+              img: '../img/shoppingBox/sh1.jpg',
+              text1: '올리자마자~',
+              text2: '인기폭발신상',
+              url: 'https://www.naver.com1',
+            },
+            {
+              img: '../img/shoppingBox/sh2.jpg',
+              text1: '감각적 디자인',
+              text2: '다들~뒤돌아봐',
+              url: 'https://www.naver.com2',
+            },
+            {
+              img: '../img/shoppingBox/sh3.jpg',
+              text1: '휘게 전상품',
+              text2: '20%특가할인!',
+              url: 'https://www.naver.com3',
+            },
+            {
+              img: '../img/shoppingBox/sh4.jpg',
+              text1: '이게뭐길래~',
+              text2: '쿨링감폭발해?',
+              url: 'https://www.naver.com4',
+            },
+            {
+              img: '../img/shoppingBox/sh5.jpg',
+              text1: '고급스러운~',
+              text2: '명품스타일~',
+              url: 'https://www.naver.com5',
+            },
+            {
+              img: '../img/shoppingBox/sh6.jpg',
+              text1: '모두들 극찬해',
+              text2: '인생 생리대',
+              url: 'https://www.naver.com6',
+            },
+            {
+              img: '../img/shoppingBox/sh7.jpg',
+              text1: '시원하게~',
+              text2: '피로를 싺~',
+              url: 'https://www.naver.com7',
+            },
+            {
+              img: '../img/shoppingBox/sh8.jpg',
+              text1: '퀄리티~좋아요',
+              text2: '전상품 5%',
+              url: 'https://www.naver.com8',
+            },
+            {
+              img: '../img/shoppingBox/sh9.jpg',
+              text1: '볼륨감원해?',
+              text2: '나를 입어봐~',
+              url: 'https://www.naver.com9',
+            },
+          ]
+        },
+        {
+          shopContentList: [
+            {
+              img: '../img/shoppingBox/sh10.jpg',
+              text1: '대체불가 핏감',
+              text2: '후회없는 선택',
+              url: 'https://www.naver.com10',
+            },
+            {
+              img: '../img/shoppingBox/sh11.jpg',
+              text1: '올리자마자~',
+              text2: '인기폭발신상',
+              url: 'https://www.naver.com11',
+            },
+            {
+              img: '../img/shoppingBox/sh12.jpg',
+              text1: '차원이다르죠?',
+              text2: '안사면 후회해',
+              url: 'https://www.naver.com12',
+            },
+            {
+              img: '../img/shoppingBox/sh13.jpg',
+              text1: '허기진 밤을',
+              text2: '달래줄 98kcal',
+              url: 'https://www.naver.com13',
+            },
+            {
+              img: '../img/shoppingBox/sh14.jpg',
+              text1: '원단좋고 시원',
+              text2: '브랜드 그이상',
+              url: 'https://www.naver.com14',
+            },
+            {
+              img: '../img/shoppingBox/sh15.jpg',
+              text1: 'ALL SALE',
+              text2: '지금이 기회!',
+              url: 'https://www.naver.com15',
+            },
+            {
+              img: '../img/shoppingBox/sh16.jpg',
+              text1: '농심라면 특가',
+              text2: '오늘만이가격!',
+              url: 'https://www.naver.com16',
+            },
+            {
+              img: '../img/shoppingBox/sh17.jpg',
+              text1: '세련미 폭발!',
+              text2: '여름이 더예뻐',
+              url: 'https://www.naver.com17',
+            },
+            {
+              img: '../img/shoppingBox/sh18.jpg',
+              text1: '헉! 색소침착',
+              text2: '100%환불가능',
+              url: 'https://www.naver.com18',
+            },
+          ]
+        },
+        {
+          shopContentList: [
+            {
+              img: '../img/shoppingBox/sh19.jpg',
+              text1: '필드위의 여신',
+              text2: '반응완전 최고',
+              url: 'https://www.naver.com19',
+            },
+            {
+              img: '../img/shoppingBox/sh20.jpg',
+              text1: '헬로월드',
+              text2: '헬로월드',
+              url: 'https://www.naver.com20',
+            },
+            {
+              img: '../img/shoppingBox/sh21.jpg',
+              text1: '헬로월드',
+              text2: '헬로월드',
+              url: 'https://www.naver.com21',
+            },
+            {
+              img: '../img/shoppingBox/sh22.jpg',
+              text1: '모공축소 세럼',
+              text2: '40% 한정특가!',
+              url: 'https://www.naver.com22',
+            },
+            {
+              img: '../img/shoppingBox/sh23.jpg',
+              text1: '지금이 기회~!',
+              text2: 'EVENT SALE~!',
+              url: 'https://www.naver.com23',
+            },
+            {
+              img: '../img/shoppingBox/sh24.jpg',
+              text1: '썸머세트인기',
+              text2: '고민없이예뻐',
+              url: 'https://www.naver.com24',
+            },
+            {
+              img: '../img/shoppingBox/sh25.jpg',
+              text1: '쓰임 총결산',
+              text2: '최대 56%↓',
+              url: 'https://www.naver.com25',
+            },
+            {
+              img: '../img/shoppingBox/sh26.jpg',
+              text1: '센스있는 코디',
+              text2: '자신감 급상승',
+              url: 'https://www.naver.com26',
+            },
+            {
+              img: '../img/shoppingBox/sh27.jpg',
+              text1: '침구심야특가!',
+              text2: '지금이 기회~',
+              url: 'https://www.naver.com27',
+            },
+          ]
+        },
+        {
+          shopContentList: [
+            {
+              img: '../img/shoppingBox/sh28.jpg',
+              text1: '필드위의 여신',
+              text2: '반응완전 최고',
+              url: 'https://www.naver.com28',
+            },
+            {
+              img: '../img/shoppingBox/sh29.jpg',
+              text1: '헬로월드',
+              text2: '헬로월드',
+              url: 'https://www.naver.com29',
+            },
+            {
+              img: '../img/shoppingBox/sh30.jpg',
+              text1: '헬로월드',
+              text2: '헬로월드',
+              url: 'https://www.naver.com30',
+            },
+            {
+              img: '../img/shoppingBox/sh31.jpg',
+              text1: '모공축소 세럼',
+              text2: '40% 한정특가!',
+              url: 'https://www.naver.com31',
+            },
+            {
+              img: '../img/shoppingBox/sh32.jpg',
+              text1: '지금이 기회~!',
+              text2: 'EVENT SALE~!',
+              url: 'https://www.naver.com32',
+            },
+            {
+              img: '../img/shoppingBox/sh33.jpg',
+              text1: '썸머세트인기',
+              text2: '고민없이예뻐',
+              url: 'https://www.naver.com33',
+            },
+            {
+              img: '../img/shoppingBox/sh34.jpg',
+              text1: '쓰임 총결산',
+              text2: '최대 56%↓',
+              url: 'https://www.naver.com34',
+            },
+            {
+              img: '../img/shoppingBox/sh35.jpg',
+              text1: '센스있는 코디',
+              text2: '자신감 급상승',
+              url: 'https://www.naver.com35',
+            },
+            {
+              img: '../img/shoppingBox/sh36.jpg',
+              text1: '침구심야특가!',
+              text2: '지금이 기회~',
+              url: 'https://www.naver.com36',
+            },
+          ]
+        },
+        {
+          shopContentList: [
+            {
+              img: '../img/shoppingBox/sh19.jpg',
+              text1: '필드위의 여신',
+              text2: '반응완전 최고',
+              url: 'https://www.naver.com19',
+            },
+            {
+              img: '../img/shoppingBox/sh20.jpg',
+              text1: '헬로월드',
+              text2: '헬로월드',
+              url: 'https://www.naver.com20',
+            },
+            {
+              img: '../img/shoppingBox/sh21.jpg',
+              text1: '헬로월드',
+              text2: '헬로월드',
+              url: 'https://www.naver.com21',
+            },
+            {
+              img: '../img/shoppingBox/sh22.jpg',
+              text1: '모공축소 세럼',
+              text2: '40% 한정특가!',
+              url: 'https://www.naver.com22',
+            },
+            {
+              img: '../img/shoppingBox/sh23.jpg',
+              text1: '지금이 기회~!',
+              text2: 'EVENT SALE~!',
+              url: 'https://www.naver.com23',
+            },
+            {
+              img: '../img/shoppingBox/sh24.jpg',
+              text1: '썸머세트인기',
+              text2: '고민없이예뻐',
+              url: 'https://www.naver.com24',
+            },
+            {
+              img: '../img/shoppingBox/sh25.jpg',
+              text1: '쓰임 총결산',
+              text2: '최대 56%↓',
+              url: 'https://www.naver.com25',
+            },
+            {
+              img: '../img/shoppingBox/sh26.jpg',
+              text1: '센스있는 코디',
+              text2: '자신감 급상승',
+              url: 'https://www.naver.com26',
+            },
+            {
+              img: '../img/shoppingBox/sh27.jpg',
+              text1: '침구심야특가!',
+              text2: '지금이 기회~',
+              url: 'https://www.naver.com27',
+            },
+          ]
+        },
+        {
+          shopContentList: [
+            {
+              img: '../img/shoppingBox/sh28.jpg',
+              text1: '필드위의 여신',
+              text2: '반응완전 최고',
+              url: 'https://www.naver.com28',
+            },
+            {
+              img: '../img/shoppingBox/sh29.jpg',
+              text1: '헬로월드',
+              text2: '헬로월드',
+              url: 'https://www.naver.com29',
+            },
+            {
+              img: '../img/shoppingBox/sh30.jpg',
+              text1: '헬로월드',
+              text2: '헬로월드',
+              url: 'https://www.naver.com30',
+            },
+            {
+              img: '../img/shoppingBox/sh31.jpg',
+              text1: '모공축소 세럼',
+              text2: '40% 한정특가!',
+              url: 'https://www.naver.com31',
+            },
+            {
+              img: '../img/shoppingBox/sh32.jpg',
+              text1: '지금이 기회~!',
+              text2: 'EVENT SALE~!',
+              url: 'https://www.naver.com32',
+            },
+            {
+              img: '../img/shoppingBox/sh33.jpg',
+              text1: '썸머세트인기',
+              text2: '고민없이예뻐',
+              url: 'https://www.naver.com33',
+            },
+            {
+              img: '../img/shoppingBox/sh34.jpg',
+              text1: '쓰임 총결산',
+              text2: '최대 56%↓',
+              url: 'https://www.naver.com34',
+            },
+            {
+              img: '../img/shoppingBox/sh35.jpg',
+              text1: '센스있는 코디',
+              text2: '자신감 급상승',
+              url: 'https://www.naver.com35',
+            },
+            {
+              img: '../img/shoppingBox/sh36.jpg',
+              text1: '침구심야특가!',
+              text2: '지금이 기회~',
+              url: 'https://www.naver.com36',
+            },
+          ]
+        },
+        
       ]
 
       const shopPaging = document.getElementById('shopPaging');
@@ -596,7 +1419,7 @@
 
         for (var cnt = 0; cnt < shopContentList[pageingNum - 1].shopContentList.length; cnt++) {
               dataModule.push(shopContentList[pageingNum - 1].shopContentList[cnt])
-             }
+        }
 
         for (var ci = 0; ci < 9; ci++) {
           shopContentItem[ci].innerHTML = '';
@@ -643,9 +1466,196 @@
           shopContentFuc(e.target.id);
         })
       }
+      //product
+
+      }
+      productFunc()
 
 
-    } //onload
+      function MENMallFunc(){
+        const MENContentList=[
+          {
+            MENContentList:[
+              {
+                img:'../img/MENContentList/sh1.jpg',
+                text1:'자꾸 배나와?',
+                text2:'입기만하면쏚~',
+                url:'https://www.naver.com1',
+              },
+              {
+                img:'../img/MENContentList/sh2.jpg',
+                text1:'한달 34,800원',
+                text2:'남자들이 더찾아',
+                url:'https://www.naver.com2',
+              },
+              {
+                img:'../img/MENContentList/sh3.jpg',
+                text1:'손목에 웬 펌프?',
+                text2:'공기주입식 깁스',
+                url:'https://www.naver.com3',
+              },
+              {
+                img:'../img/MENContentList/sh4.jpg',
+                text1:'자고난뒤 피곤?',
+                text2:'왜 진작 몰랐지?',
+                url:'https://www.naver.com4',
+              },
+              {
+                img:'../img/MENContentList/sh5.jpg',
+                text1:'긴팔이더시원해!',
+                text2:'추성훈티5,900원',
+                url:'https://www.naver.com5',
+              },
+              {
+                img:'../img/MENContentList/sh6.jpg',
+                text1:'1만원대 진짜?',
+                text2:'프리미엄 칼라티',
+                url:'https://www.naver.com6',
+              },
+              {
+                img:'../img/MENContentList/sh7.jpg',
+                text1:'입냄새 잇몸질환',
+                text2:'이거 하나면 끝!',
+                url:'https://www.naver.com7',
+              },
+              {
+                img:'../img/MENContentList/sh8.jpg',
+                text1:'풀커버 강화유리',
+                text2:'이 가격 실화?!',
+                url:'https://www.naver.com8',
+              },
+              {
+                img:'../img/MENContentList/sh9.jpg',
+                text1:'비싸서 못샀던거',
+                text2:'웹일로 이가격?!',
+                url:'https://www.naver.com9',
+              },
+            ]
+          },
+          {
+            MENContentList:[
+              {
+                img:'../img/MENContentList/sh10.jpg',
+                text1:'와 진짜!',
+                text2:'향수?필요없네~',
+                url:'https://www.naver.com10',
+              },
+              {
+                img:'../img/MENContentList/sh11.jpg',
+                text1:'피곤한 남자들',
+                text2:'붙여봐 해결돼~',
+                url:'https://www.naver.com11',
+              },
+              {
+                img:'../img/MENContentList/sh12.jpg',
+                text1:'헉! 3만원대라니',
+                text2:'없어서 못샀던거',
+                url:'https://www.naver.com12',
+              },
+              {
+                img:'../img/MENContentList/sh13.jpg',
+                text1:'엘칸토 리퍼브',
+                text2:'39,600원~',
+                url:'https://www.naver.com13',
+              },
+              {
+                img:'../img/MENContentList/sh14.jpg',
+                text1:'제발',
+                text2:'잠 좀풀자고싶어',
+                url:'https://www.naver.com14',
+              },
+              {
+                img:'../img/MENContentList/sh15.jpg',
+                text1:'여름이니까~',
+                text2:'드라이기능성티!',
+                url:'https://www.naver.com15',
+              },
+              {
+                img:'../img/MENContentList/sh16.jpg',
+                text1:'3in1 구스다운',
+                text2:'회원 93%할인',
+                url:'https://www.naver.com16',
+              },
+              {
+                img:'../img/MENContentList/sh17.jpg',
+                text1:'자동차 스크래치',
+                text2:'제거 타올 등장!',
+                url:'https://www.naver.com17',
+              },
+              {
+                img:'../img/MENContentList/sh18.jpg',
+                text1:'시원한 착용감',
+                text2:'데일리 리넨셔츠',
+                url:'https://www.naver.com18',
+              },
+            ]
+          },
+          {
+            MENContentList:[
+              {
+                img:'../img/MENContentList/sh19.jpg',
+                text1:'눕자마자 기절!',
+                text2:'나에게 딱 맞춰!',
+                url:'https://www.naver.com19',
+              },
+              {
+                img:'../img/MENContentList/sh20.jpg',
+                text1:'엄마 나 키컸어!',
+                text2:'5cm 인생역전',
+                url:'https://www.naver.com20',
+              },
+              {
+                img:'../img/MENContentList/sh21.jpg',
+                text1:'단 일주일 1+1',
+                text2:'슬랙스 3만원대!',
+                url:'https://www.naver.com21',
+              },
+              {
+                img:'../img/MENContentList/sh22.jpg',
+                text1:'미운티아 여름',
+                text2:'의류창고개방!',
+                url:'https://www.naver.com22',
+              },
+              {
+                img:'../img/MENContentList/sh23.jpg',
+                text1:'이가격에 나올',
+                text2:'신발이 아닌ㄴ데',
+                url:'https://www.naver.com23',
+              },
+              {
+                img:'../img/MENContentList/sh24.jpg',
+                text1:'아무리 더워도',
+                text2:'스타일 포기못해!',
+                url:'https://www.naver.com24',
+              },
+              {
+                img:'../img/MENContentList/sh25.jpg',
+                text1:'요즘 이거없는',
+                text2:'사람이 어딨어',
+                url:'https://www.naver.com25',
+              },
+              {
+                img:'../img/MENContentList/sh26.jpg',
+                text1:'호랑이 기운?',
+                text2:'진짜부럽지않네~',
+                url:'https://www.naver.com26',
+              },
+              {
+                img:'../img/MENContentList/sh27.jpg',
+                text1:'비싸서 못샀던거',
+                text2:'드디어~한국상륙',
+                url:'https://www.naver.com27',
+              },
+            ]
+          },
+        ]
+      
+
+      }
+      MENMallFunc()
+      })//load
+  
+
   </script>
 </body>
 

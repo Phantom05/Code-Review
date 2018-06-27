@@ -605,6 +605,98 @@ theme cast
   float: left;
   padding: 0; }
 
+.themecast__type1_ul {
+  overflow: hidden;
+  padding: 20px 0px 20px 20px; }
+
+.themecast__type1_list {
+  float: left;
+  width: 166px;
+  height: 185px;
+  margin: 0px 9px 12px 0; }
+  .themecast__type1_list a {
+    display: block;
+    overflow: hidden; }
+  .themecast__type1_list .themecast_img_top {
+    position: absolute; }
+    .themecast__type1_list .themecast_img_top img {
+      display: block;
+      width: 166px;
+      height: 185px; }
+
+.themecast_bar {
+  width: 10px;
+  height: 3px;
+  background: white;
+  zoom: 1; }
+
+.themecast_category_list_ul {
+  position: relative;
+  zoom: 1;
+  font-size: 14px; }
+  .themecast_category_list_ul li {
+    float: left; }
+    .themecast_category_list_ul li a {
+      color: white; }
+
+.themecast_tt {
+  position: relative;
+  zoom: 1; }
+
+.themecast_bigimage {
+  position: relative;
+  width: 346px; }
+
+.themecast__text_box {
+  overflow: hidden;
+  letter-spacing: -1px;
+  line-height: 15px;
+  font-size: 13px; }
+
+.themecast__tx_title {
+  display: block;
+  margin: 7px 0;
+  font-weight: bold; }
+
+.themecast__sub_box {
+  color: #888; }
+
+.themecast__td_bar {
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background: #e3e7ee;
+  margin: 0 1px; }
+
+.themecast__tda img {
+  transition: .2s; }
+
+.themecast__tda:hover img {
+  transform: scale(1.05);
+  transition: .3s; }
+
+.themecast__tda:hover .themecast__tx_title {
+  text-decoration: underline; }
+
+.themecast__title_tx_box {
+  position: absolute;
+  width: 322px;
+  padding: 5px 12px;
+  left: 0;
+  bottom: -7px;
+  background: rgba(0, 0, 0, 0.5); }
+
+.themecast_title_sub_tx {
+  display: block;
+  width: 100%;
+  letter-spacing: -1px;
+  font-size: 13px;
+  color: white;
+  line-height: 18px; }
+
+.themecast__title_top {
+  font-weight: 400; }
+
 .shp_cst {
   height: 882px;
   background: white;
@@ -619,7 +711,7 @@ EMPTY
 */
 .main_bt_banner .bt_banner_list {
   float: left;
-  width: 49%;
+  width: 50%;
   border: 0;
   padding-top: 8px;
   height: 120px; }

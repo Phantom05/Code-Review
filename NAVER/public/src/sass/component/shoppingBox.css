@@ -23,6 +23,24 @@ shopping box
   width: 1px;
   height: 1px; }
 
+.shop_content {
+  display: none; }
+
+.shop_banner {
+  display: none; }
+
+.mall_content {
+  display: none; }
+
+.mall_banner {
+  display: none; }
+
+.MEN_content {
+  display: none; }
+
+.MEN_banner {
+  display: none; }
+
 .shop_header {
   position: relative;
   overflow: hidden;
@@ -60,6 +78,9 @@ shopping box
     .malllist div a:hover {
       text-decoration: underline; }
 
+/*
+product
+*/
 .contents_memAd {
   position: relative;
   padding: 38px 0 5px 10px;
@@ -73,9 +94,14 @@ shopping box
   height: 50px;
   color: gray; }
   .shop_paging em {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 32px;
     float: left;
     font-size: 12px;
-    margin: 5px 10px 0 0; }
+    margin: 5px 6px 0 0;
+    letter-spacing: -1px; }
   .shop_paging strong {
     color: black; }
   .shop_paging > a {
@@ -146,3 +172,48 @@ shopping box
     text-decoration: underline; }
   .shop_banner_list .bn-title {
     margin-right: 10px; }
+
+/*
+ mens
+*/
+.contents_mens {
+  position: relative;
+  overflow: hidden; }
+
+.ms_md {
+  overflow: hidden; }
+
+.contents_mens_ul {
+  cursor: pointer;
+  padding-top: 40px;
+  overflow: hidden; }
+  .contents_mens_ul .mens_content_list {
+    float: left;
+    width: 94px;
+    border: 1px solid #f1f3f6;
+    padding: 15px 6.5px;
+    text-align: center;
+    overflow: hidden;
+    transition: .5s; }
+    .contents_mens_ul .mens_content_list img {
+      width: 100%;
+      transition: .5s; }
+    .contents_mens_ul .mens_content_list span {
+      display: block;
+      font-size: 13px;
+      letter-spacing: -1px;
+      line-height: 15px; }
+    .contents_mens_ul .mens_content_list:hover span {
+      text-decoration: underline; }
+    .contents_mens_ul .mens_content_list:hover img {
+      transition: .5s;
+      transform: scale(1.1); }
+
+.mens_tx {
+  margin-top: 7px; }
+
+.tabActive {
+  display: block; }
+
+.tabUnActive {
+  display: none; }
