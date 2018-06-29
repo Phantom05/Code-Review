@@ -169,10 +169,10 @@
         </div>
         <!-- MEN product -->
         <div class="contents_mens">
-          <div class="shop_paging">
+          <div id="MENArrowBt" class="shop_paging">
             <em class="pagind_em">
-              <strong class="ft-bd">1</strong>
-              <span>/4</span>
+              <strong id="MENCurrentPaging" class="ft-bd">1</strong>
+              <span id="MENPagingMount"></span>
             </em>
             <a href="" class="shop_prev">
               <span class="blind">이전 리스트</span>
@@ -183,128 +183,22 @@
               ＞
             </a>
           </div>
-          <ul class="contents_mens_ul">
-            <li class="mens_content_list"><a href="">
-              <div class="ms_md">
-                <img src="../img/MENContentList/sh1.jpg" alt="">
-              </div>
-              <p class="mens_tx">
-                <span>단 일주일 1+1</span>
-                <span>슬랙스 3만원대!</span>
-              </p>
-            </a></li>
-            <li class="mens_content_list"><a href="">
-                <div>
-                  <img src="../img/MENContentList/sh1.jpg" alt="">
-                </div>
-                <p class="mens_tx">
-                  <span>
-                    단 일주일 1+1
-                  </span>
-                  <span>
-                    슬랙스 3만원대!
-                  </span>
-                </p>
-            </a></li>
-            <li class="mens_content_list"><a href="">
-                <div>
-                    <img src="../img/MENContentList/sh1.jpg" alt="">
-                  </div>
-                  <p class="mens_tx">
-                    <span>
-                      단 일주일 1+1
-                    </span>
-                    <span>
-                      슬랙스 3만원대!
-                    </span>
-                  </p>
-            </a></li>
-            <li class="mens_content_list"><a href="">
-                <div>
-                    <img src="../img/MENContentList/sh1.jpg" alt="">
-                  </div>
-                  <p class="mens_tx">
-                    <span>
-                      단 일주일 1+1
-                    </span>
-                    <span>
-                      슬랙스 3만원대!
-                    </span>
-                  </p>
-            </a></li>
-            <li class="mens_content_list"><a href="">
-                <div>
-                    <img src="../img/MENContentList/sh1.jpg" alt="">
-                  </div>
-                  <p class="mens_tx">
-                    <span>
-                      단 일주일 1+1
-                    </span>
-                    <span>
-                      슬랙스 3만원대!
-                    </span>
-                  </p>
-            </a></li>
-            <li class="mens_content_list"><a href="">
-                <div>
-                    <img src="../img/MENContentList/sh1.jpg" alt="">
-                  </div>
-                  <p class="mens_tx">
-                    <span>
-                      단 일주일 1+1
-                    </span>
-                    <span>
-                      슬랙스 3만원대!
-                    </span>
-                  </p>
-            </a></li>
-            <li class="mens_content_list"><a href="">
-                <div>
-                    <img src="../img/MENContentList/sh1.jpg" alt="">
-                  </div>
-                  <p class="mens_tx">
-                    <span>
-                      단 일주일 1+1
-                    </span>
-                    <span>
-                      슬랙스 3만원대!
-                    </span>
-                  </p>
-            </a></li>
-            <li class="mens_content_list"><a href="">
-                <div>
-                    <img src="../img/MENContentList/sh1.jpg" alt="">
-                  </div>
-                  <p class="mens_tx">
-                    <span>
-                      단 일주일 1+1
-                    </span>
-                    <span>
-                      슬랙스 3만원대!
-                    </span>
-                  </p>
-            </a></li>
-            <li class="mens_content_list"><a href="">
-                <div>
-                    <img src="../img/MENContentList/sh1.jpg" alt="">
-                  </div>
-                  <p class="mens_tx">
-                    <span>
-                      단 일주일 1+1
-                    </span>
-                    <span>
-                      슬랙스 3만원대!
-                    </span>
-                  </p>
-            </a></li>
-          </ul>
+          <div id="MENContentBox"></div>
         </div>
 
     </div>
 
     <!-- MEN  banner-->
     <div id="MENBanner" class="MEN_banner ">
-      MEN banner active
+      
+      <h4 class="MEN_title"><span class="MEN_tt_bar"></span>PLAY-FUN</h4>
+      <a href="" id="MENRefreshBt" class="MEN_refesh">
+        ◎
+        <span class="blind">PLAYFUN 새로고침</span>
+      </a>
+      <div id="MENBannerListBox">
+
+      </div>
 
     </div>
   </div>
@@ -329,6 +223,16 @@
       const mainTab =document.getElementsByClassName('mainTab');
 
       const allMenu =document.getElementsByClassName('allMenu');
+
+
+
+      //shop top tab
+      tabBox.addEventListener('click',function(e){
+        for(var i =0;i<mainTab.length;i++){
+          mainTab[i].classList.remove('shop_active');
+        }
+        if(e.target.tagName=='A') e.target.classList.add('shop_active');
+      })
 
       productTab.addEventListener('click',function(e){tabChange(e)})
       mallTab.addEventListener('click',function(e){tabChange(e)})
@@ -368,8 +272,8 @@
           productContent.classList.remove('tabActive');
           productBanner.classList.remove('tabActive');
         }
+        return;
       }
-
 
       // product func
       function productFunc(){
@@ -577,6 +481,7 @@
             shopBannerli[sh_cnt].lastElementChild.append(green);
           }
         }
+      return;
       }
       shopDataFuc();
 
@@ -1467,13 +1372,24 @@
         })
       }
       //product
-
+      return;
       }
       productFunc()
 
+      // MENS func
+      // banner
+      const MENRefreshBt=document.getElementById('MENRefreshBt');
+      const MENBannerListBox =document.getElementById('MENBannerListBox');
+      const MENArrowBt=document.getElementById('MENArrowBt');
+      const MENCurrentPaging=document.getElementById('MENCurrentPaging');
+      const MENPagingMount=document.getElementById('MENPagingMount');
+      let MENData=[];
+  
 
+      
       function MENMallFunc(){
-        const MENContentList=[
+      //MENContent
+      const MENContentList=[
           {
             MENContentList:[
               {
@@ -1481,54 +1397,63 @@
                 text1:'자꾸 배나와?',
                 text2:'입기만하면쏚~',
                 url:'https://www.naver.com1',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh2.jpg',
                 text1:'한달 34,800원',
                 text2:'남자들이 더찾아',
                 url:'https://www.naver.com2',
+                title:'얼굴 보호대',
               },
               {
                 img:'../img/MENContentList/sh3.jpg',
                 text1:'손목에 웬 펌프?',
                 text2:'공기주입식 깁스',
                 url:'https://www.naver.com3',
+                title:'시원한 린넨셔츠',
               },
               {
                 img:'../img/MENContentList/sh4.jpg',
                 text1:'자고난뒤 피곤?',
                 text2:'왜 진작 몰랐지?',
                 url:'https://www.naver.com4',
+                title:'피로 회복제',
               },
               {
                 img:'../img/MENContentList/sh5.jpg',
                 text1:'긴팔이더시원해!',
                 text2:'추성훈티5,900원',
                 url:'https://www.naver.com5',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh6.jpg',
                 text1:'1만원대 진짜?',
                 text2:'프리미엄 칼라티',
                 url:'https://www.naver.com6',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh7.jpg',
                 text1:'입냄새 잇몸질환',
                 text2:'이거 하나면 끝!',
                 url:'https://www.naver.com7',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh8.jpg',
                 text1:'풀커버 강화유리',
                 text2:'이 가격 실화?!',
                 url:'https://www.naver.com8',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh9.jpg',
                 text1:'비싸서 못샀던거',
                 text2:'웹일로 이가격?!',
                 url:'https://www.naver.com9',
+                title:'손목 보호대',
               },
             ]
           },
@@ -1539,54 +1464,63 @@
                 text1:'와 진짜!',
                 text2:'향수?필요없네~',
                 url:'https://www.naver.com10',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh11.jpg',
                 text1:'피곤한 남자들',
                 text2:'붙여봐 해결돼~',
                 url:'https://www.naver.com11',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh12.jpg',
                 text1:'헉! 3만원대라니',
                 text2:'없어서 못샀던거',
                 url:'https://www.naver.com12',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh13.jpg',
                 text1:'엘칸토 리퍼브',
                 text2:'39,600원~',
                 url:'https://www.naver.com13',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh14.jpg',
                 text1:'제발',
                 text2:'잠 좀풀자고싶어',
                 url:'https://www.naver.com14',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh15.jpg',
                 text1:'여름이니까~',
                 text2:'드라이기능성티!',
                 url:'https://www.naver.com15',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh16.jpg',
                 text1:'3in1 구스다운',
                 text2:'회원 93%할인',
                 url:'https://www.naver.com16',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh17.jpg',
                 text1:'자동차 스크래치',
                 text2:'제거 타올 등장!',
                 url:'https://www.naver.com17',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh18.jpg',
                 text1:'시원한 착용감',
                 text2:'데일리 리넨셔츠',
                 url:'https://www.naver.com18',
+                title:'손목 보호대',
               },
             ]
           },
@@ -1597,62 +1531,342 @@
                 text1:'눕자마자 기절!',
                 text2:'나에게 딱 맞춰!',
                 url:'https://www.naver.com19',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh20.jpg',
                 text1:'엄마 나 키컸어!',
                 text2:'5cm 인생역전',
                 url:'https://www.naver.com20',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh21.jpg',
                 text1:'단 일주일 1+1',
                 text2:'슬랙스 3만원대!',
                 url:'https://www.naver.com21',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh22.jpg',
                 text1:'미운티아 여름',
                 text2:'의류창고개방!',
                 url:'https://www.naver.com22',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh23.jpg',
                 text1:'이가격에 나올',
                 text2:'신발이 아닌ㄴ데',
                 url:'https://www.naver.com23',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh24.jpg',
                 text1:'아무리 더워도',
                 text2:'스타일 포기못해!',
                 url:'https://www.naver.com24',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh25.jpg',
                 text1:'요즘 이거없는',
                 text2:'사람이 어딨어',
                 url:'https://www.naver.com25',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh26.jpg',
                 text1:'호랑이 기운?',
                 text2:'진짜부럽지않네~',
                 url:'https://www.naver.com26',
+                title:'손목 보호대',
               },
               {
                 img:'../img/MENContentList/sh27.jpg',
                 text1:'비싸서 못샀던거',
                 text2:'드디어~한국상륙',
                 url:'https://www.naver.com27',
+                title:'손목 보호대',
               },
             ]
           },
         ]
-      
+      let MENContentPagingNum=0;
+      const MENContentBox =document.getElementById('MENContentBox');
 
+      MENPagingMount.innerHTML='/'+MENContentList.length;
+        MENArrowBt.addEventListener('click',function(e){
+          e.preventDefault();
+
+          if(e.target.tagName=='A'){
+            if(e.target.className=='shop_prev'){
+              (MENContentPagingNum<1)?MENContentPagingNum=MENContentList.length-1:MENContentPagingNum--;
+            }else if (e.target.className=='shop_next'){
+              (MENContentPagingNum>=MENContentList.length-1)?MENContentPagingNum=0:MENContentPagingNum++;
+            }
+          }
+          MENCurrentPaging.innerHTML=MENContentPagingNum+1;
+          MENContentFunc()
+        })
+
+        function MENContentFunc(){
+          MENContentBox.innerHTML='';
+          let ul = document.createElement('ul');
+          ul.classList.add('contents_mens_ul');
+          for(var i =0;i<9;i++){
+            let li = document.createElement('li');
+            let a = document.createElement('a');
+            let div =document.createElement('div');
+            let img = document.createElement('img');
+
+            let p = document.createElement('p');
+            let span1 = document.createElement('span');
+            let span2 = document.createElement('span');
+
+            li.classList.add('mens_content_list');
+            a.href = MENContentList[MENContentPagingNum].MENContentList[i].url;
+
+            div.classList.add('ms_md');
+            img.src=MENContentList[MENContentPagingNum].MENContentList[i].img;
+            img.alt=MENContentList[MENContentPagingNum].MENContentList[i].title;
+
+            p.classList.add('mens_tx');
+            span1.classList.add('mens_content_span');
+            span2.classList.add('mens_content_span');
+            span1.innerHTML=MENContentList[MENContentPagingNum].MENContentList[i].text1;
+            span2.innerHTML=MENContentList[MENContentPagingNum].MENContentList[i].text2;
+
+            p.appendChild(span1);
+            p.appendChild(span2);
+            div.appendChild(img);
+            a.appendChild(div);
+            a.appendChild(p);
+
+            li.appendChild(a);
+            ul.appendChild(li)
+          }
+          MENContentBox.appendChild(ul);
+        }
+        MENContentFunc();
+      
+        
+
+
+
+
+
+        
+      //MENBanner
+      const MENBannerList=[
+              {
+                url:'https:www.google.com1',
+                src:'../img/MENSBanner/mb1.jpg',
+                title:'USB충전기',
+                text1:'이렇게간편할수가',
+                text2:'컴팩트하게USB 충전',
+                text3:'더액션',
+              },
+              {
+                url:'https:www.google.com2',
+                src:'../img/MENSBanner/mb2.jpg',
+                title:'머리고정젤',
+                text1:'땀범벅~머리고정',
+                text2:'특가 2+1 진행중',
+                text3:'엠도씨',
+              },
+              {
+                url:'https:www.google.com3',
+                src:'../img/MENSBanner/mb3.jpg',
+                title:'휴대폰 게임기',
+                text1:'반응 장난아니야~',
+                text2:'못사서 안달났어~',
+                text3:'폰뿌',
+              },
+              {
+                url:'https:www.google.com4',
+                src:'../img/MENSBanner/mb4.jpg',
+                title:'구스다운방풍',
+                text1:'방수방풍기능 3in1',
+                text2:'구스다운 93%',
+                text3:'슈나이더 스포츠',
+              },
+              {
+                url:'https:www.google.com5',
+                src:'../img/MENSBanner/mb5.jpg',
+                title:'무선이어폰',
+                text1:'터치 볼륨컨트롤',
+                text2:'무선이어폰 입고',
+                text3:'펀픽',
+              },
+              {
+                url:'https:www.google.com6',
+                src:'../img/MENSBanner/mb6.jpg',
+                title:'가로모드 폰거치대',
+                text1:'운전자를위한 정면',
+                text2:'가로모드 폰거치대',
+                text3:'비비드망고',
+              },
+              {
+                url:'https:www.google.com7',
+                src:'../img/MENSBanner/mb7.jpg',
+                title:'고음질! 이어폰',
+                text1:'최대 15시간 사용',
+                text2:'고음질 무선이어폰',
+                text3:'앱스토리몰',
+              },
+              {
+                url:'https:www.google.com8',
+                src:'../img/MENSBanner/mb8.jpg',
+                title:'액션캡짱',
+                text1:'5만원대',
+                text2:'가성비 액션캡',
+                text3:'앱스토리몰',
+              },
+              {
+                url:'https:www.google.com9',
+                src:'../img/MENSBanner/mb9.jpg',
+                title:'빠른 움직임',
+                text1:'가볍고편한 클로그',
+                text2:'언제나 신기 좋아',
+                text3:'스포츠다이렉트',
+              },
+              {
+                url:'https:www.google.com10',
+                src:'../img/MENSBanner/mb10.jpg',
+                title:'언더아머 러닝화',
+                text1:'이런게 진짜 특가!',
+                text2:'언더아머 러닝화',
+                text3:'스포츠다이렉트',
+              },
+              {
+                url:'https:www.google.com11',
+                src:'../img/MENSBanner/mb11.jpg',
+                title:'그라펜 샴푸',
+                text1:'샴푸로 대머리탈출',
+                text2:'지금사면 1+1',
+                text3:'그라펜',
+              },
+              {
+                url:'https:www.google.com12',
+                src:'../img/MENSBanner/mb12.jpg',
+                title:'손풍기',
+                text1:'이거들면 여자들 다!',
+                text2:'시원 시원',
+                text3:'선풍기',
+              },
+              {
+                url:'https:www.google.com13',
+                src:'../img/MENSBanner/mb13.jpg',
+                title:'손풍기',
+                text1:'이거들면 여자들 다!',
+                text2:'시원 시원',
+                text3:'선풍기',
+              },
+              {
+                url:'https:www.google.com14',
+                src:'../img/MENSBanner/mb14.jpg',
+                title:'손풍기',
+                text1:'이거들면 여자들 다!',
+                text2:'시원 시원',
+                text3:'선풍기',
+              },
+              {
+                url:'https:www.google.com15',
+                src:'../img/MENSBanner/mb15.jpg',
+                title:'손풍기',
+                text1:'이거들면 여자들 다!',
+                text2:'시원 시원',
+                text3:'선풍기',
+              },
+              {
+                url:'https:www.google.com16',
+                src:'../img/MENSBanner/mb16.jpg',
+                title:'손풍기',
+                text1:'이거들면 여자들 다!',
+                text2:'시원 시원',
+                text3:'선풍기',
+              },
+              {
+                url:'https:www.google.com17',
+                src:'../img/MENSBanner/mb17.jpg',
+                title:'손풍기',
+                text1:'이거들면 여자들 다!',
+                text2:'시원 시원',
+                text3:'선풍기',
+              },
+              {
+                url:'https:www.google.com18',
+                src:'../img/MENSBanner/mb18.jpg',
+                title:'손풍기',
+                text1:'이거들면 여자들 다!',
+                text2:'시원 시원',
+                text3:'선풍기',
+              },
+            ]
+      
+      MENRefreshBt.addEventListener('click',function(e){
+        e.preventDefault();
+         MENData=[];
+         MENBannerFunc()
+      })
+      function MENBannerFunc(){   
+        MENBannerListBox.innerHTML='';
+        let ul = document.createElement('ul');
+          for(var cnt =0;cnt<3;cnt++){
+            let randomNum=Math.floor(Math.random()*MENBannerList.length);
+            if(MENData.includes(randomNum)){
+              cnt= cnt-1;
+              continue;
+            }else{
+              MENData.push(randomNum);
+            }
+            const li = document.createElement('il');
+            const a = document.createElement('a');
+            const img = document.createElement('img');
+            const spanParent = document.createElement('span');
+            const span1 = document.createElement('span');
+            const span2 = document.createElement('span');
+            const span3=document.createElement('span');
+
+            li.classList.add('MEN_banner_list');
+            a.classList.add('MENBanner_anch');
+            a.href=MENBannerList[randomNum].url;
+
+            img.src=MENBannerList[randomNum].src;
+            img.alt=MENBannerList[randomNum].title;
+            img.classList.add('MEN_img_float');
+
+            spanParent.classList.add('MEN_banner_txbox');
+            span3.classList.add('MEN_color_tx');
+            span1.textContent=MENBannerList[randomNum].text1;
+            span2.textContent=MENBannerList[randomNum].text2;
+            span3.textContent=MENBannerList[randomNum].text3;
+
+            spanParent.appendChild(span1);
+            spanParent.appendChild(span2);
+            spanParent.appendChild(span3);
+
+            a.appendChild(img);
+            a.appendChild(spanParent);
+            li.appendChild(a);
+            ul.appendChild(li);
+          }
+          MENBannerListBox.appendChild(ul);
+          return;
+        }
+        MENBannerFunc();
+
+
+
+        return
       }
-      MENMallFunc()
+      MENMallFunc();
+
+
+
+
+     
       })//load
   
 

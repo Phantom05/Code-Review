@@ -185,32 +185,93 @@ product
 
 .contents_mens_ul {
   cursor: pointer;
-  padding-top: 40px;
+  padding-top: 35px;
   overflow: hidden; }
-  .contents_mens_ul .mens_content_list {
-    float: left;
-    width: 94px;
-    border: 1px solid #f1f3f6;
-    padding: 15px 6.5px;
-    text-align: center;
-    overflow: hidden;
+
+.mens_content_list {
+  float: left;
+  width: 94px;
+  border: 1px solid #f1f3f6;
+  padding: 15px 6.3px;
+  text-align: center;
+  overflow: hidden;
+  transition: .5s; }
+  .mens_content_list img {
+    width: 100%;
     transition: .5s; }
-    .contents_mens_ul .mens_content_list img {
-      width: 100%;
-      transition: .5s; }
-    .contents_mens_ul .mens_content_list span {
-      display: block;
-      font-size: 13px;
-      letter-spacing: -1px;
-      line-height: 15px; }
-    .contents_mens_ul .mens_content_list:hover span {
-      text-decoration: underline; }
-    .contents_mens_ul .mens_content_list:hover img {
-      transition: .5s;
-      transform: scale(1.1); }
+  .mens_content_list:hover span {
+    text-decoration: underline; }
+  .mens_content_list:hover img {
+    transition: .5s;
+    transform: scale(1.1); }
+
+.mens_content_span {
+  display: block;
+  line-height: 15px; }
 
 .mens_tx {
-  margin-top: 7px; }
+  margin-top: 7px;
+  letter-spacing: -1px;
+  font-size: 13px; }
+
+.MEN_banner {
+  position: relative;
+  background: #f9fafc; }
+
+.MEN_tt_bar {
+  display: block;
+  width: 3px;
+  height: 14px;
+  background: #9891e5;
+  float: left;
+  margin-top: 13px;
+  margin-right: 5px; }
+
+.MEN_title {
+  font-weight: bold;
+  font-size: 14px;
+  height: 30px;
+  line-height: 40px;
+  padding-left: 15px; }
+
+.MEN_refesh {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  background: white;
+  padding: 5px;
+  border: 1px solid #ececec; }
+
+.MEN_img_float {
+  float: left;
+  width: 116px;
+  height: 64px;
+  margin-right: 10px; }
+
+.MEN_banner_list {
+  display: block;
+  overflow: hidden;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ececec;
+  margin: 9px auto;
+  width: 280px; }
+
+.MENBanner_anch {
+  display: block;
+  overflow: hidden; }
+
+.MEN_banner_list:hover {
+  text-decoration: underline; }
+
+.MEN_banner_txbox {
+  font-size: 14px; }
+  .MEN_banner_txbox span {
+    display: block; }
+
+.MEN_color_tx {
+  margin-top: 5px;
+  color: #7b97c5; }
 
 .tabActive {
   display: block; }
