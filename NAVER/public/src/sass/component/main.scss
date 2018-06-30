@@ -380,16 +380,7 @@
     float: right;
     color: gray;
     margin-right: 110px;
-    >.tb_sub_tab{
-      cursor: pointer;
-      float: left;
-      font-size: 18px;
-      padding: 10px 12px;
-      &:hover{
-        color: black;
-      }
-    }
-
+    margin-top: 5px;
     .tb_arrow_box{
       border: 1px solid $gray;
       font-weight: bold;
@@ -399,6 +390,35 @@
     }
   }
 }
+.tb_sub_tab{
+  cursor: pointer;
+  float: left;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  background: url('../../img/head/newsStandIcon.png') no-repeat;
+  padding: 10px;
+
+}
+.tb_sub_icon1{
+  background-position: -220px -116px;
+  // &:hover{
+  //   background-position:-193px -116px;
+  // }
+}
+.tb_sub_icon2{
+  background-position: 10px -185px;
+    &:hover{
+      background-position: -190px -144px;
+  }
+}
+.tb_sub_icon3{
+  background-position: -17px -185px;
+    &:hover{
+      background-position: -45px -184px;
+  }
+}
+
 .api_ul{
   width: 100%;
   overflow: hidden;

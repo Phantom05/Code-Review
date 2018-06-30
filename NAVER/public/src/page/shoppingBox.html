@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../sass/base/ie7reset.css">
+  <link rel="stylesheet" href="../sass/component/shoppingBox.css">
+  <title>쇼핑 박스</title>
+
+</head>
+
+<body>
+  <div class="shop_wrap">
+    <!-- shop header -->
+    <div class="shop_header">
+      <div class="shop_header_box">
+        <h1>
+          <a href="">쇼핑</a>
+        </h1>
+      </div>
+      <div id="tabBox" class="shop_header_box">
+        <ul>
+          <li>
+            <a id="productTab" href="" class="shop_active mainTab">상품</a>
+          </li>
+          <li>
+            <a id="mallTab" href="" class="mainTab">쇼핑몰</a>
+          </li>
+          <li>
+            <a id="menTab" href="" class="mainTab">MEN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- product mall list -->
+    <div id="productShopContent" class="shop_content tabActive ">
+      <h3 class="blind">상품</h3>
+      <div class="malllist">
+        <div class="malllist1">
+          <a href="">G마켓</a>
+          <span class="ls5">·</span>
+          <a href="">옥션</a>
+          <span class="ls5">·</span>
+          <a href="">
+            <strong class="ft-bd">11번가</strong>
+          </a>
+          <span class="ls5">·</span>
+          <a href="">위메프 </a>
+          <span class="ls5">·</span>
+          <a href="">티몬 </a>
+          <span class="ls5">·</span>
+          <a href="">이마트 </a>
+          <span class="ls5">·</span>
+          <a href="">
+            <strong class="ft-bd">신세계몰</strong>
+          </a>
+        </div>
+        <div class="malllist2">
+          <a href="">GS샵</a>
+          <span class="ls5">·</span>
+          <a href="">롯데닷컴 </a>
+          <span class="ls5">·</span>
+          <a href="">롯데i몰 </a>
+          <span class="ls5">·</span>
+          <a href="">
+            <strong class="ft-bd">CJmall</strong>
+          </a>
+          <span class="ls5">·</span>
+          <a href="">현대H몰 </a>
+          <span class="ls5">·</span>
+          <a href="">올리브영 </a>
+        </div>
+      </div>
+      <!-- product list -->
+      <div class="contents_memAd">
+        <h4 class="blind">상품 리스트</h4>
+        <ul class="shop_contents_ul">
+          <li class="shop_content_item"></li>
+          <li class="shop_content_item"></li>
+          <li class="shop_content_item"></li>
+          <li class="shop_content_item"></li>
+          <li class="shop_content_item"></li>
+          <li class="shop_content_item"></li>
+          <li class="shop_content_item"></li>
+          <li class="shop_content_item"></li>
+          <li class="shop_content_item"></li>
+        </ul>
+        <!-- mall paging -->
+        <div class="shop_paging">
+          <em>
+            <strong id="shopPaging" class="ft-bd">1</strong>
+            <span id="pageMount"></span>
+          </em>
+          <a id="shopPrev" href="" class="shop_prev shopContentArrow">＜
+            <span class="blind">이전 리스트</span>
+          </a>
+          <a id="shopNext" href="" class="shop_next shopContentArrow">＞
+            <span class="blind">다음 리스트</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- product shop banner -->
+    <div id="productShopBanner" class="shop_banner tabActive ">
+      <div class="shop_banner_title">
+        <h4 class="">
+          <span class="shop_title_stick"></span> 반갑다! 쇼핑뉴스</h4>
+        <a href="" id="shopRefreshBt" data-num="0" class="MEN_refesh">
+          <span class="blind">쇼핑뉴스 새로고침</span>
+        </a>
+      </div>
+      <div class="shop_banner_list">
+        <ul>
+          <li class="shop_banner_li"></li>
+          <li class="shop_banner_li"></li>
+          <li class="shop_banner_li"></li>
+          <li class="shop_banner_li"></li>
+          <li class="shop_banner_li"></li>
+          <li class="shop_banner_li"></li>
+          <li class="shop_banner_li"></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- shopmall list -->
+    <div id="shopMallContent" class="mall_content ">
+      <h3 class="blind">쇼핑몰</h3>
+      <div class="contents_memAd">
+        <div id="mallPagingBox" class="shop_paging">
+          <em>
+            <strong id="mallCurrentPaging" class="ft-bd">1</strong>
+            <span id="mallPagingMount">/13</span>
+          </em>
+          <a id="mallPrevBt" href="" class="shop_prev">＜
+            <span class="blind">이전 리스트</span>
+          </a>
+          <a id="mallNextBt" href="" class="shop_next">＞
+            <span class="blind">다음 리스트</span>
+          </a>
+        </div>
+
+        <div id="mallContentBox" class="mall_content_box"></div>
+      </div>
+    </div>
+
+    <!-- shopmall banner -->
+    <div id="shopMallBanner" class="mall_banner ">
+      <!-- <div class="mall_sale_box">
+        <a href="">
+          <span class="mall_sale_icon">
+            <span class="blind">sale</span>
+          </span>
+          <span id="mallTextBanner" class="mall_sale_anchor"></span>
+        </a>
+      </div> -->
+
+      <div class="mall_bx">
+        <div class="mall_title_link">
+          <a href="">
+            <img src="../img/shoppingMallContentList/title/tt1.gif" alt="" class="mall_title_img">
+
+            <span class="mall_nowlink_box">
+              <span class="mall_nowLink">바로가기</span>
+              <span>＞</span>
+            </span>
+          </a>
+        </div>
+        <ul class="mall_title_ul">
+          <li class="mall_content_list">
+            <a href="">
+              <img src="../img/shoppingMallContentList/tt3-2.jpg" alt="" class="mall_content_img">
+              <span class="mall_text_box">
+                <span class="mall_tx_span">
+                  귀여워 소장할래
+                </span>
+                <span>
+                  미니제품 포함!
+                </span>
+              </span>
+            </a>
+          </li>
+          <li class="mall_content_list">
+            <a href="">
+              <img src="../img/shoppingMallContentList/tt3-1.jpg" alt="" class="mall_content_img">
+              <span class="mall_text_box">
+                <span class="mall_tx_span">
+                  날개없는 선풍기
+                </span>
+                <span>
+                  풍속짱! 휴대용!
+                </span>
+              </span>
+            </a>
+          </li>
+          <li class="mall_content_list">
+            <a href="">
+              <img src="../img/shoppingMallContentList/tt1-6.jpg" alt="" class="mall_content_img">
+              <span class="mall_text_box">
+                <span class="mall_tx_span">
+                  날개없는 선풍기
+                </span>
+                <span>
+                  풍속짱! 휴대용!
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mall_bx">
+        <div class="mall_title_link">
+          <a href="">
+            <img src="../img/shoppingMallContentList/title/tt1.gif" alt="" class="mall_title_img">
+
+            <span class="mall_nowlink_box">
+              <span class="mall_nowLink">바로가기</span>
+              <span>＞</span>
+            </span>
+          </a>
+        </div>
+        <ul class="mall_title_ul">
+          <li class="mall_content_list">
+            <a href="">
+              <span>
+                <img src="../img/shoppingMallContentList/tt1-5.jpg" alt="" class="mall_content_img">
+              </span>
+              <span class="mall_text_box">
+                <span class="mall_tx_span">
+                  귀여워 소장할래
+                </span>
+                <span>
+                  미니제품 포함!
+                </span>
+              </span>
+            </a>
+          </li>
+          <li class="mall_content_list">
+            <a href="">
+              <span>
+                <img src="../img/shoppingMallContentList/tt1-6.jpg" alt="" class="mall_content_img">
+              </span>
+              <span class="mall_text_box">
+                <span class="mall_tx_span">
+                  날개없는 선풍기
+                </span>
+                <span>
+                  풍속짱! 휴대용!
+                </span>
+              </span>
+            </a>
+          </li>
+          <li class="mall_content_list">
+            <a href="">
+              <span>
+                <img src="../img/shoppingMallContentList/tt1-6.jpg" alt="" class="mall_content_img">
+              </span>
+              <span class="mall_text_box">
+                <span class="mall_tx_span">
+                  날개없는 선풍기
+                </span>
+                <span>
+                  풍속짱! 휴대용!
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mall_bx">
+        <div class="mall_title_link">
+          <a href="">
+            <img src="../img/shoppingMallContentList/title/tt1.gif" alt="" class="mall_title_img">
+
+            <span class="mall_nowlink_box">
+              <span class="mall_nowLink">바로가기</span>
+              <span>＞</span>
+            </span>
+          </a>
+        </div>
+        <ul class="mall_title_ul">
+          <li class="mall_content_list">
+            <a href="">
+              <span>
+                <img src="../img/shoppingMallContentList/tt1-5.jpg" alt="" class="mall_content_img">
+              </span>
+              <span class="mall_text_box">
+                <span class="mall_tx_span">
+                  귀여워 소장할래
+                </span>
+                <span>
+                  미니제품 포함!
+                </span>
+              </span>
+            </a>
+          </li>
+          <li class="mall_content_list">
+            <a href="">
+              <span>
+                <img src="../img/shoppingMallContentList/tt1-6.jpg" alt="" class="mall_content_img">
+              </span>
+              <span class="mall_text_box">
+                <span class="mall_tx_span">
+                  날개없는 선풍기
+                </span>
+                <span>
+                  풍속짱! 휴대용!
+                </span>
+              </span>
+            </a>
+          </li>
+          <li class="mall_content_list">
+            <a href="">
+              <span>
+                <img src="../img/shoppingMallContentList/tt1-6.jpg" alt="" class="mall_content_img">
+              </span>
+              <span class="mall_text_box">
+                <span class="mall_tx_span">
+                  날개없는 선풍기
+                </span>
+                <span>
+                  풍속짱! 휴대용!
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Men list -->
+    <div id="MENConent" class="MEN_content ">
+      <h3 class="blind">멘즈</h3>
+      <div class="malllist">
+        <div class="malllist1">
+          <a href="">G마켓</a>
+          <span class="ls5">·</span>
+          <a href="">옥션</a>
+          <span class="ls5">·</span>
+          <a href="">
+            <strong class="ft-bd">11번가</strong>
+          </a>
+          <span class="ls5">·</span>
+          <a href="">위메프 </a>
+          <span class="ls5">·</span>
+          <a href="">티몬 </a>
+          <span class="ls5">·</span>
+          <a href="">이마트 </a>
+          <span class="ls5">·</span>
+          <a href="">
+            <strong class="ft-bd">신세계몰</strong>
+          </a>
+        </div>
+        <div class="malllist2">
+          <a href="">GS샵</a>
+          <span class="ls5">·</span>
+          <a href="">롯데닷컴 </a>
+          <span class="ls5">·</span>
+          <a href="">롯데i몰 </a>
+          <span class="ls5">·</span>
+          <a href="">
+            <strong class="ft-bd">CJmall</strong>
+          </a>
+          <span class="ls5">·</span>
+          <a href="">현대H몰 </a>
+          <span class="ls5">·</span>
+          <a href="">올리브영 </a>
+        </div>
+      </div>
+      <!-- MEN product -->
+      <div class="contents_mens">
+        <div id="MENArrowBt" class="shop_paging">
+          <em class="pagind_em">
+            <strong id="MENCurrentPaging" class="ft-bd">1</strong>
+            <span id="MENPagingMount"></span>
+          </em>
+          <a href="" class="shop_prev">
+            <span class="blind">이전 리스트</span>
+            ＜
+          </a>
+          <a href="" class="shop_next">
+            <span class="blind">다음 리스트</span>
+            ＞
+          </a>
+        </div>
+        <div id="MENContentBox"></div>
+      </div>
+
+    </div>
+
+    <!-- MEN  banner-->
+    <div id="MENBanner" class="MEN_banner ">
+      <h4 class="MEN_title">
+        <span class="MEN_tt_bar"></span>PLAY-FUN</h4>
+      <a href="" id="MENRefreshBt" class="MEN_refesh">
+        <span class="blind">PLAYFUN 새로고침</span>
+      </a>
+      <div id="MENBannerListBox"></div>
+    </div>
+  </div>
+
+  <script src="./shoppingBox.js"></script>
+</body>
+
+</html>
