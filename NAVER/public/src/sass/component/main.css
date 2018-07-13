@@ -575,16 +575,20 @@ theme cast
   font-size: 14px;
   font-weight: bold;
   border-bottom: 1px solid #f1f3f6; }
-  .themecast_tab .themecast_tab_ul {
-    width: 1600px;
-    padding-left: 12px;
-    overflow: hidden; }
-    .themecast_tab .themecast_tab_ul > li {
-      float: left; }
-      .themecast_tab .themecast_tab_ul > li > a {
-        display: block;
-        padding: 15px 8px;
-        margin-right: 6px; }
+
+.themecast_tab_ul {
+  position: relative;
+  width: 1600px;
+  padding-left: 12px;
+  overflow: hidden;
+  left: 0;
+  transition: .5s; }
+  .themecast_tab_ul > li {
+    float: left; }
+    .themecast_tab_ul > li > a {
+      display: block;
+      padding: 15px 8px;
+      margin-right: 6px; }
 
 .themecast__toggle_tab {
   display: inline-block;
@@ -629,6 +633,9 @@ theme cast
 .themecast_type1 {
   display: none; }
 
+.themecast_type3 {
+  display: none; }
+
 .themecast__type_ul {
   overflow: hidden;
   padding: 20px 0px 20px 20px; }
@@ -651,6 +658,7 @@ theme cast
       height: 185px; }
 
 .themecast_bar {
+  display: block;
   position: relative;
   width: 15px;
   height: 2px;
@@ -742,6 +750,8 @@ theme cast
 
 .themecast_float_img {
   float: left;
+  width: 45px;
+  height: 45px;
   margin-right: 10px;
   border-radius: 50%; }
 
@@ -765,6 +775,7 @@ theme cast
   border-bottom: 1px solid #f1f3f6; }
 
 .themecast_type2_banner {
+  float: left;
   width: 346px; }
 
 .tb_tit {
@@ -787,13 +798,11 @@ theme cast
   margin-right: 10px; }
 
 .themecast_type2_banner_tx {
+  display: block;
   margin: 5px 0; }
 
 .themecast_type2_banner_tx:hover {
   text-decoration: underline; }
-
-.themecast_type3 {
-  display: none; }
 
 .themecast_type3_bigimage {
   position: relative;
@@ -817,6 +826,10 @@ theme cast
 
 .themecast_type3_bigimage_list:hover a {
   text-decoration: underline; }
+
+.themecast_type3_bigimage_list:hover img {
+  transform: scale(1.1);
+  transition: .5s; }
 
 .themecast_type3_inner_first {
   margin-right: 10px; }
@@ -991,6 +1004,24 @@ footer
   right: -25px;
   background: #e8e9ec;
   vertical-align: -2px; }
+
+.themecast__side_list {
+  background: #f9fafc; }
+
+.themecast__side_list:hover .themecast__side_An {
+  text-decoration: underline; }
+
+.themecast__side_An {
+  display: block;
+  height: 100%;
+  padding: 15px 10px 0;
+  font-size: 13px;
+  height: 47px;
+  letter-spacing: -1px; }
+
+.themecast__sidebd_tb {
+  border-bottom: 1px solid #ebeef3;
+  border-top: 1px solid #ebeef3; }
 
 @media (max-width: 1080px) {
   .wrap {
