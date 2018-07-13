@@ -883,6 +883,7 @@ theme cast
   transition: .3s;
 }
 .themecast_type2_float_img{
+  width: 130px;
   float: left;
   margin-right: 10px;
 }
@@ -912,12 +913,18 @@ theme cast
 .themecast_type3_bigimage_list{
   float: left;
   width: 160px;
-  span{
+  span{//span 지우기
     display: block;
     font-size: 13px;
     font-weight: bold;
     line-height: 20px;
   }
+}
+.themecast__type3_bigimage_inner{
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
 }
 .themecast_type3_bigimage_list:hover a{
   text-decoration: underline;
@@ -1161,7 +1168,17 @@ footer
   border-bottom: 1px solid #ebeef3;
   border-top: 1px solid #ebeef3;
 }
-
+.themecast__img_tle{
+  width: 100%;
+  height: 79px;
+}
+.themecast__img_tda{
+  width:200px
+}
+.themecast__img_static{
+  width: 100%;
+  height: 100px;
+}
 
 
 
