@@ -1,5 +1,7 @@
-window.addEventListener('DOMContentLoaded', function () {
+// document.write("<script src='./components/datafile.js'><''/script>");
 
+
+window.addEventListener('DOMContentLoaded', function () {
 
   // nav more start
   const NAV_MORE = document.getElementById('navMore');
@@ -362,5 +364,5 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
-  
-})
+
+}) //onloaed
