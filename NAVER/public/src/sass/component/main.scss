@@ -640,7 +640,7 @@ theme cast
   padding-left: 12px;
   overflow: hidden;
   left: 0;
-  transition: .5s;
+  // transition: .5s;
   >li{
     float: left;
     >a{
@@ -674,6 +674,12 @@ theme cast
   top: 0;
   left: 45px;
   overflow: hidden;
+}
+.themecast_main_tabList{
+
+}
+.themecast_main_tabList:after{
+  
 }
 
 
@@ -1173,6 +1179,7 @@ footer
   height: 79px;
 }
 .themecast__img_tda{
+  height: 100px;
   width:200px
 }
 .themecast__img_static{
@@ -1184,8 +1191,8 @@ footer
 
 //media
 
-@media (max-width:1080px){
-  .wrap{
-    width: 100%;
-  }
-}
+// @media (max-width:1080px){
+//   .wrap{
+//     width: 100%;
+//   }
+// }
