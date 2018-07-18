@@ -3,6 +3,7 @@
 .wrap{
   width: 1100px;
   margin: auto;
+  position: relative;
 }
 .ft-gr{
   color: $green;
@@ -95,12 +96,16 @@
 // nav
 .nav{
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   border-top: 1px solid $gray;
   border-bottom: 1px solid $gray;
 }
+.nav:after{
+  display: block;
+  clear: both;
+  content: '';
+}
 .nav__ul{
-  overflow: hidden;
   font-size: 14px;
   >li{
     cursor: pointer;
@@ -110,6 +115,11 @@
       font-weight: bold;
     }
   }
+}
+.nav__ul:after{
+  display: block;
+  content: '';
+  clear: both;
 }
 .nav_ft{
   display: block;
@@ -172,60 +182,36 @@
 
 .nav__live{
   position: relative;
-  top: 2px;
-  .live__hv_pannel{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    background: white;
-    border: 1px solid rgb(209,216,228);
-  }
-  &:hover .live__hv_pannel{
-    display: block;
-  }
+  width: 250px;
+  height: 30px;
+  top: 8px;
+  overflow: hidden;
+
+
 }
+
+//live Pannel
 .live__arrow{
   position: absolute;
   right: 0;
   top: 8px;
 }
 .live__ul{
-  position: relative;
+  position: absolute;
+  left: 20px;
+  top: 0;
   overflow: hidden;
-  width: 250px;
-  height: 30px;
   >li{
     position: relative;
     text-align: center;
-    padding: 7px 0;
+    height: 30px;
+    line-height: 30px;
     top: 0;
-    animation: liveUp 60s 2s infinite;
   }
-  @keyframes liveUp {
-    0%{top:0}
-    5%{top: -30px}
-    10%{top: -60px}
-    15%{top: -90px}
-    20%{top: -120px}
-    25%{top: -150px}
-    30%{top: -180px}
-    35%{top: -210px}
-    40%{top: -240px}
-    45%{top: -270px}
-    50%{top: -300px}
-    55%{top: -330px}
-    60%{top: -360px}
-    65%{top: -390px}
-    70%{top: -420px}
-    75%{top: -450px}
-    80%{top: -480px}
-    85%{top: -510px}
-    90%{top: -540px}
-    95%{top: -570px}
-  }
+}
+.livePannel_row{
+  display: block;
+  overflow: hidden;
 }
 .live_num{
   color: $green;
@@ -235,34 +221,121 @@
 .live_tx{
   font-size: 13px;
 }
+
+//hover live pannel
+
 .live__hv_pannel{
-  padding: 15px;
+  display: none;
+  position: absolute;
+  top: -45px;
+  right: 10px;
+  width: 280px;
+  background: white;
+  border: 1px solid rgb(209,216,228);
+  z-index: 20;
+  padding: 10px 18px 5px 18px;
   font-weight: bold;
-  >ul{
-    overflow: hidden;
-    >li{
-      float: left;
-      padding: 1px;
-      letter-spacing: -1px;
-    }
-    li:first-child{
-      width: 35%;
-    }
-    li:last-child{
-      width: 63%;
-    }
-  }
 }
-.live__pannel_tx{
+.livePannel__top{
+  height: 30px;
+  line-height: 32px;
+}
+.livePannel__middle{
+  margin: 5px 0;
+}
+.livePannel_title{
+  float: left;
+  padding: 1px;
+  letter-spacing: -2px;
+  font-size: 15px;
+  width: 130px;
+}
+.livePannel__an{
+  font-weight: 400;
+  font-size: 13px;
+}
+.livePannel__an:hover{
+  text-decoration: underline;
+}
+.nav__live:hover .live__hv_pannel{
+  display: block;
+}
+
+.livePannel__rank_box{
+  float: left;
+  width: 49%;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid rgb(226, 226, 226);
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  cursor: pointer;
+  background: rgb(247, 247, 247)
+}
+.livePannel__rank_box:first-child{
+  margin-right: -1px;
+}
+.livePannel_rank{
+  display: inline-block;
+  width: 10px;
   font-weight: bold;
-  &:hover span{
-    text-decoration: underline;
-  }
-  >a>span{
-    font-weight: 400;
-    letter-spacing: -1px;
-  }
+  font-size: 14px;
+  margin-right: 10px;
+  color: rgb(83, 83, 83);
 }
+.livePannel_tx{
+  display: block;
+  position: relative;
+  height: 23px;
+  line-height: 23px;
+  font-weight: 400;
+  font-size: 12px;
+}
+.livePannel_tx:hover{
+  text-decoration: underline;
+}
+.livePannel_bottom{
+  color: gray;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 5px 0;
+  border-top: 1px solid rgb(187, 187, 187);
+  margin-top: 5px;
+}
+.livePannel__mo{
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  display: inline-block;
+  border-radius: 100%;
+  border: 1px solid rgb(196, 196, 196);
+  color: rgb(196, 196, 196);
+  font-size: 12px;
+  font-weight: bold;
+}
+.livePannel__icon{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 12px;
+  height: 12px;
+  background: url('../../img/head/title_logo.png');
+  background-position: -125px -148px;
+}
+.livePannel__v1,.livePannel__v2{
+  display: none;
+}
+.livePannel__Active{
+  display: block;
+}
+.livePannel__bgAct{
+  background: white;
+}
+
 
 /* main*/
 .container{
@@ -324,30 +397,24 @@
 }
 .ct-ul{
   position: relative;
+  top: 0;
+  left: 0;
   overflow: hidden;
-  height: 20px;
+  letter-spacing: -1px;
   >li{
     position: relative;
     padding-top: 1px;
     top: 0px;
     left: 0;
     height: 20px;
-    animation: ctAd 60s 2s forwards;
-  }
-  @keyframes ctAd {
-    0%{top:0}
-    5%{top: -21px}
-    10%{top: -42px}
-    15%{top: -63px}
-    20%{top: -84px}
-    25%{top: -105px}
-    30%{top: -126px}
-    35%{top: -147px}
-    40%{top: -168px}
-    45%{top: -189px}
+    letter-spacing: -2px;
   }
 }
 .ct-ad{
+  position: relative;
+  height: 22px;
+  overflow: hidden;
+
   float: left;
   width: 320px;
 }
@@ -551,22 +618,35 @@
   top: 0;
   right: 75px;
   padding-right: 1px;
+  font-size: 12px;
 }
 .arrow_cont{
   position: absolute;
-  top: 0;
+  top: -10px;
   right: 0;
+  cursor: pointer;
 }
 .rr_active_tb{
   font-weight: bold;
 }
 
 .arrow_box{
-  border: 1px solid $gray;
+  display:block;
+  float: left;
+  width: 25px;
+  height: 32px;
+  text-align: center;
+  border: 1px solid #f1f3f6;
   font-weight: bold;
-  padding: 8px;
+
+  line-height: 32px;
 }
 //weather
+//page1
+.rr_tab_title{
+  font-size: 13px;
+  color: rgb(128, 128, 128);
+}
 .rr_weather_box{
   overflow: hidden;
   padding-left: 15px;
@@ -602,21 +682,113 @@
     font-size: 33px;
     letter-spacing: -1px;
     margin-top: 12px;
-    sup{
+    .tempsup{
       position: relative;
       top: -13px;
-      right: 8px;
+      right: 0;
       font-size: 12px;
     }
   }
 }
+.rr_change{
+  height: 104px;
+}
+.rr_news{
+  font-size: 13px;
+  letter-spacing: -1px;
+  line-height: 25px;
+  padding: 15px;
+}
 .rr_weather_news{
-  padding:15px 10px;
+  padding:13px 10px;
   font-size: 13px;
   letter-spacing: -.5px;
 }
+//rr news
+//page2,page3
+.rr_news_row{
+  display: block;
+  white-space: nowrap;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.rr_news_title_a{
+  color: #2565d0;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.rr_news_tx:hover{
+  text-decoration: underline;
+}
+.rr_news_content:visited{
+  color: gray;
+}
+.rr_new_bar{
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  margin: 0 6px;
+  background: rgb(230, 230, 230);
+}
+
+//english
+//page4
+
+.rr_eng_txbl{
+  color: #2565d0;
+}
+.rr_eng_main_tx{
+  font-weight: bold;
+  font-size: 17px;
+}
 
 
+//생활도구
+//page5
+
+.rr_icon{
+  display: inline-block;
+  width: 20px;
+  height: 21px;
+  background: url('../../img/flick/livingTools/sp_timesquare_v170913a.png');
+  margin-right: 10px;
+}
+.rr_living:hover a{
+  text-decoration: underline;
+}
+.rr_living_ul{
+  overflow: hidden;
+  line-height: 38px;
+}
+.rr_living{
+  float: left;
+  width: 24.999%;
+}
+.rr_icon1{
+  background-position: -433px -93px;
+}
+.rr_icon2{
+  background-position: -433px -62px;
+}
+.rr_icon3{
+  background-position: -433px -186px;
+}
+.rr_icon4{
+  background-position: -433px -31px;
+}
+.rr_icon5{
+  background-position: -433px -124px;
+}
+.rr_icon6{
+  background-position: -433px -155px;
+}
+.rr_icon7{
+  background-position: -433px 0;
+}
+.rr_icon8{
+  background-position: -396px -333px;
+}
 
 /*
 theme cast
@@ -676,10 +848,17 @@ theme cast
   overflow: hidden;
 }
 .themecast_main_tabList{
-
+  position: relative;
 }
-.themecast_main_tabList:after{
-  
+.themecast_main_tabList_border{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background: white;
+  content: '';
 }
 
 
