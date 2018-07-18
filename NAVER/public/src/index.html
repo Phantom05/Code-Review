@@ -236,19 +236,78 @@
                 </a>
               </li>
             </ul>
-            <div class="live__hv_pannel">
-              <ul>
-                <li class="live_tx">실시간 급상승</li>
-                <li class="live__pannel_tx live_tx">
-                  <a href="">DataLab.
-                    <span>급상승 트래킹</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+
           </li>
         </ul>
+
+           
+          </div>
       </div>
+    </div>
+    <div class="wrap">
+        <div class="live__hv_pannel">
+        <div class="livePannel_row livePannel__top">
+            <div class="livePannel_title">실시간 급상승</div>
+            <div class="livePannel_title live_tx">
+              <a href="">DataLab.
+                <span class="livePannel__an">급상승 트래킹</span>
+              </a>
+          </div>
+        </div>
+
+        <div class="livePannel_row livePannel__middle">
+          <div class="livePannel__rank_box livePannel__bgAct">1~10위</div>
+          <div class="livePannel__rank_box">11~20위</div>
+        </div>
+        <div class="livePannel_row ">
+          <ul class="livePannel__v1 livePannel__Active">
+            <li><a href="" class="livePannel_tx"><span class="livePannel_rank">1</span>만석닭강정
+              <span class="livePannel__icon"></span></a></li>
+            <li><a href="" class="livePannel_tx"><span class="livePannel_rank">2</span>손태영
+            <span class="livePannel__icon"></span></a></li>
+            <li><a href="" class="livePannel_tx"><span class="livePannel_rank">3</span>네이처셀
+            <span class="livePannel__icon"></span></a></li>
+            <li><a href="" class="livePannel_tx"><span class="livePannel_rank">4</span>속초 만석닭강정
+            <span class="livePannel__icon"></span></a></li>
+            <li><a href="" class="livePannel_tx"><span class="livePannel_rank">5</span>김정민
+            <span class="livePannel__icon"></span></a></li>
+            <li><a href="" class="livePannel_tx"><span class="livePannel_rank">6</span>커피스미스
+            <span class="livePannel__icon"></span></a></li>
+            <li><a href="" class="livePannel_tx"><span class="livePannel_rank">7</span>뉴프라이드
+            <span class="livePannel__icon"></span></a></li>
+            <li><a href="" class="livePannel_tx"><span class="livePannel_rank">8</span>자동차 개별소비세
+            <span class="livePannel__icon"></span></a></li>
+            <li><a href="" class="livePannel_tx"><span class="livePannel_rank">9</span>독전 익스텐드컷
+            <span class="livePannel__icon"></span></a></li>
+            <li><a href="" class="livePannel_tx"><span class="livePannel_rank">10</span>여욱환
+            <span class="livePannel__icon"></span></a></li>
+          </ul>
+          <ul class="livePannel__v2">
+              <li><a href="" class="livePannel_tx"><span class="livePannel_rank">11</span>비트코인
+                <span class="livePannel__icon"></span></a></li>
+              <li><a href="" class="livePannel_tx"><span class="livePannel_rank">12</span>근로장려금
+              <span class="livePannel__icon"></span></a></li>
+              <li><a href="" class="livePannel_tx"><span class="livePannel_rank">13</span>청하
+              <span class="livePannel__icon"></span></a></li>
+              <li><a href="" class="livePannel_tx"><span class="livePannel_rank">14</span>류이호
+              <span class="livePannel__icon"></span></a></li>
+              <li><a href="" class="livePannel_tx"><span class="livePannel_rank">15</span>김워희
+              <span class="livePannel__icon"></span></a></li>
+              <li><a href="" class="livePannel_tx"><span class="livePannel_rank">16</span>인크레더블 2
+              <span class="livePannel__icon"></span></a></li>
+              <li><a href="" class="livePannel_tx"><span class="livePannel_rank">17</span>동두천어린이집사고
+              <span class="livePannel__icon"></span></a></li>
+              <li><a href="" class="livePannel_tx"><span class="livePannel_rank">18</span>유영진
+              <span class="livePannel__icon"></span></a></li>
+              <li><a href="" class="livePannel_tx"><span class="livePannel_rank">19</span>김원
+              <span class="livePannel__icon"></span></a></li>
+              <li><a href="" class="livePannel_tx"><span class="livePannel_rank">20</span>독전
+              <span class="livePannel__icon"></span></a></li>
+            </ul>
+        </div>
+        <div class="livePannel_row livePannel_bottom">
+          2018.07.18. 12:52:30 기준<a href="" class="livePannel__mo">?</a>
+        </div>
     </div>
     <!-- nav opacity -->
     <div id="navMoreUl" class="nav_more_cont">
@@ -607,55 +666,218 @@
                     </ul>
                   </form>
                 </li>
-                <li class="main__rr_top main__layout_bd">
+                <!-- page1 -->
+                <li id="rrTaskBox" class="main__rr_top main__layout_bd">
                   <div class="rr_tab">
-                    <div class="rr_tab_daily">
-                      <a href="" class="ft-bd">6.21.(목)</a>│
-                      <a href="">서울시 송파구 ＞</a>
+                    <div id="flicDABox" class="rr_tab_daily">
+                      <a href="" class="ft-bd"></a>│
+                      <a href="" class="rr_tab_title"></a>
                     </div>
                     <div class="rr_tab_bt">
-                      <div class="rr_tab_paging">
-                        <span class="rr_active_tb">1</span>/
-                        <span>6</span>
+                      <div id="flickPagingBox" class="rr_tab_paging">
+                        <span id="flickNum" class="rr_active_tb"></span>
+                        <span></span>
                       </div>
                       <div class="arrow_cont">
-                        <a href="" class="arrow_box">
+                        <a href="" id="flickPrevBt" class="arrow_box">
                           ＜
                           <span class="blind">앞의 목록으로 이동</span>
                         </a>
-                        <a href="" class="arrow_box">
+                        <a href="" id="flickNextBt" class="arrow_box">
                           ＞
                           <span class="blind">뒤의 목록으로 이동</span>
                         </a>
                       </div>
                     </div>
                   </div>
-                  <div>
-                    <a href="">
-                      <ul class="rr_weather_box">
-                        <li class="rr_weather_today rr_sky_state"></li>
-                        <li class="rr_weather_today rr_today_mountem">
-                          <span class="rr_today_tem">25
-                            <sup>°C</sup>
-                          </span>
-                          <span class="ft-sk ft-bd">19°</span>/
-                          <span class="ft-rd ft-bd">28°</span>
+                  <div class="rr_change"></div>
+                </li>
+                <!-- page1 -->
+                <!-- page2 -->
+                <!-- <li class="main__rr_top main__layout_bd">
+                    <div class="rr_tab">
+                        <div class="rr_tab_daily">
+                          <a href="" class="ft-bd">6.21.(목)</a>│
+                          <a href="" class="rr_tab_title">뉴스</a>
+                        </div>
+                        <div class="rr_tab_bt">
+                          <div class="rr_tab_paging">
+                            <span class="rr_active_tb">2</span>/
+                            <span>6</span>
+                          </div>
+                          <div class="arrow_cont">
+                            <a href="" class="arrow_box">
+                              ＜
+                              <span class="blind">앞의 목록으로 이동</span>
+                            </a>
+                            <a href="" class="arrow_box">
+                              ＞
+                              <span class="blind">뒤의 목록으로 이동</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rr_change">
+                          <ul class="rr_news">
+                              <li class="rr_news_row">
+                                <a href="" class="rr_news_title_a rr_news_tx">TV뉴스</a>
+                                <a href="" class="rr_news_tx rr_news_content">저녁 메인 뉴스 다시보기</a>
+                              </li>
+                              <li class="rr_news_row">
+                                <a href="" class="rr_news_title_a rr_news_tx">학습</a>
+                                <a href="" class="rr_news_tx rr_news_content">영어로 듣는 뉴스</a>
+                                <i class="rr_new_bar"></i>
+                                <a href="" class="rr_news_tx rr_news_content">영어톡톡</a>
+                              </li>
+                              <li class="rr_news_row">
+                                <a href="" class="rr_news_title_a rr_news_tx">부동산</a>
+                                <a href="" class="rr_news_tx rr_news_content">부동산 거래 절벽 현실화...올해 6월 주택매...</a>
+                              </li>
+                            </ul>
+                      </div>
+    
+                </li> -->
+                <!-- page2 -->
+
+                <!-- page3 -->
+                <!-- <li class="main__rr_top main__layout_bd">
+                    <div class="rr_tab">
+                        <div class="rr_tab_daily">
+                          <a href="" class="ft-bd">6.21.(목)</a>│
+                          <a href="" class="rr_tab_title">스포츠</a>
+                        </div>
+                        <div class="rr_tab_bt">
+                          <div class="rr_tab_paging">
+                            <span class="rr_active_tb">3</span>/
+                            <span>6</span>
+                          </div>
+                          <div class="arrow_cont">
+                            <a href="" class="arrow_box">
+                              ＜
+                              <span class="blind">앞의 목록으로 이동</span>
+                            </a>
+                            <a href="" class="arrow_box">
+                              ＞
+                              <span class="blind">뒤의 목록으로 이동</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="rr_news">
+                        <li class="rr_news_row">
+                          <a href="" class="rr_news_title_a rr_news_tx">야구</a>
+                          <a href="" class="rr_news_tx rr_news_content">홈런 2방+5회 빅이닝 한화 KT 꺾고 후반기...</a>
                         </li>
-                        <li>
-                          <p class="rr_weather_today ft-bd rr_weather_tx">어제와 같아요
-                            <br>
-                            <span>미세먼지</span>
-                            <span class="ft-sk">좋음</span>
-                          </p>
+                        <li class="rr_news_row">
+                          <a href="" class="rr_news_title_a rr_news_tx">해외축구</a>
+                          <a href="" class="rr_news_tx rr_news_content">호날두 이어 지단도 유벤투스행?...기술 이...</a>
+                        </li>
+                        <li class="rr_news_row">
+                          <a href="" class="rr_news_title_a rr_news_tx">해외야구</a>
+                          <a href="" class="rr_news_tx rr_news_content">추신수는 선구안이 좋은 타자가 아니다?［...</a>
                         </li>
                       </ul>
-                      <p class="rr_weather_news">
-                        <span class="ft-bl">날씨</span> 실시간 기상 정보 확인하기 │
-                        <span class="ft-ygray">주간예보</span>
-                      </p>
-                    </a>
-                  </div>
-                </li>
+                </li> -->
+                <!-- page3 -->
+
+                <!-- page4 -->
+                <!-- <li class="main__rr_top main__layout_bd">
+                    <div class="rr_tab">
+                        <div class="rr_tab_daily">
+                          <a href="" class="ft-bd">6.21.(목)</a>│
+                          <a href="" class="rr_tab_title">영어회화</a>
+                        </div>
+                        <div class="rr_tab_bt">
+                          <div class="rr_tab_paging">
+                            <span class="rr_active_tb">4</span>/
+                            <span>6</span>
+                          </div>
+                          <div class="arrow_cont">
+                            <a href="" class="arrow_box">
+                              ＜
+                              <span class="blind">앞의 목록으로 이동</span>
+                            </a>
+                            <a href="" class="arrow_box">
+                              ＞
+                              <span class="blind">뒤의 목록으로 이동</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rr_news">
+                        <a href="">
+                            <ul>
+                                <li>
+                                  거리의 <span class="rr_eng_txbl">상수도 본관</span>이 터졌어요.
+                                </li>
+                                <li class="rr_eng_main_tx">
+                                  A <span class="rr_eng_txbl">warter main</span> in the street has broken.
+                                </li>
+                                <li>
+                                  어 <span class="rr_eng_txbl">워터 메인</span> 인 더 스트리트 해즈 브로큰
+                                </li>
+                            </ul>
+                        </a>
+
+                      </div>
+                </li> -->
+                <!-- page4 -->
+
+                <!-- page5 -->
+                <!-- <li class="main__rr_top main__layout_bd">
+                    <div class="rr_tab">
+                        <div class="rr_tab_daily">
+                          <a href="" class="ft-bd">6.21.(목)</a>│
+                          <a href="" class="rr_tab_title">생활도구</a>
+                        </div>
+                        <div class="rr_tab_bt">
+                          <div class="rr_tab_paging">
+                            <span class="rr_active_tb">5</span>/
+                            <span>5</span>
+                          </div>
+                          <div class="arrow_cont">
+                            <a href="" class="arrow_box">
+                              ＜
+                              <span class="blind">앞의 목록으로 이동</span>
+                            </a>
+                            <a href="" class="arrow_box">
+                              ＞
+                              <span class="blind">뒤의 목록으로 이동</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rr_news">
+                        <ul class="rr_living_ul">
+                          <li class="rr_living"><a href="">
+                            <span class="rr_icon rr_icon1"></span>환율
+                          </a></li>
+                          <li class="rr_living"><a href="">
+                            <span class="rr_icon rr_icon2"></span>운세
+                          </a></li>
+                          <li class="rr_living"><a href="">
+                            <span class="rr_icon rr_icon3"></span>TV편성
+                          </a></li>
+                          <li class="rr_living"><a href="">
+                            <span class="rr_icon rr_icon4"></span>시계
+                          </a></li>
+                          <li class="rr_living"><a href="">
+                            <span class="rr_icon rr_icon5"></span>달력
+                          </a></li>
+                          <li class="rr_living"><a href="">
+                            <span class="rr_icon rr_icon6"></span>계산기
+                          </a></li>
+                          <li class="rr_living"><a href="">
+                            <span class="rr_icon rr_icon7"></span>로또
+                          </a></li>
+                          <li class="rr_living"><a href="">
+                            <span class="rr_icon rr_icon8"></span>택배
+                          </a></li>
+                        </ul>
+                      </div>
+                </li> -->
+                <!-- page5 -->
+
                 <li class="main__rr_top main__layout_bd">
                   <a href="">
                     <img src="./img/main/right_ad/unicef.jpg" alt="">
@@ -679,35 +901,64 @@
                   </a>
                   <div class="themecast_main_tab">
                     <ul class="themecast_tab_ul">
-                      <li><a href="">리빙</a></li>
-                      <li><a href="">푸드</a></li>
-                      <li><a href="">스포츠</a></li>
-                      <li><a href="">자동차</a></li>
-                      <li><a href="">패션뷰티</a></li>
-                      <li><a href="">부모i</a></li>
-                      <li><a href="">건강</a></li>
-                      <li><a href="">웹툰</a></li>
-                      <li><a href="">게임</a></li>
-                      <li><a href="">TV연예</a></li>
-                      <li><a href="">뮤직</a></li>
-                      <li><a href="">영화</a></li>
-                      <li><a href="">책문화</a></li>
-                      <li><a href="">함께N</a></li>
-                      <li><a href="">여행</a></li>
-                      <li><a href="">디자인</a></li>
-                      <li><a href="">경제M</a></li>
-                      <li><a href="">JOB</a></li>
-                      <li><a href="">과학</a></li>
-                      <li><a href="">중국</a></li>
-                      <li><a href="">비즈니스</a></li>
-                      <li><a href="">FARM</a></li>
-                      <li><a href="">스쿨잼</a></li>
-                      <li><a href="">공연전시</a></li>
-                      <li><a href="">법률</a></li>
-                      <li><a href="">동물공감</a></li>
-                      <li><a href="">연애결혼</a></li>
-                      <li><a href="">테크</a></li>
-                      <li><a href="">감성충전</a></li>
+                      <li class="themecast_main_tabList"><a href="">리빙</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">푸드</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">스포츠</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">자동차</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">패션뷰티</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">부모i</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">건강</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">웹툰</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">게임</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">TV연예</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">뮤직</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">영화</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">책문화</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">함께N</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">여행</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">디자인</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">경제M</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">JOB</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">과학</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">중국</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">비즈니스</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">FARM</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">스쿨잼</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">공연전시</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">법률</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">동물공감</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">연애결혼</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">테크</a>
+                      <span class="themecast_main_tabList_border"></span></li>
+                      <li class="themecast_main_tabList"><a href="">감성충전</a>
+                      <span class="themecast_main_tabList_border"></span></li>
                     </ul>
                   </div>
                   <div id="themeArrowBox" class="arrow_box_cont">
@@ -1850,10 +2101,6 @@
       </div>
     </div>
   </div>
-
-<div class="fuck">
-  ㅡㅡ
-</div>
   <script src="./js/index.js"></script>
   <script src="./js/components/datafile.js"></script> 
   
@@ -1862,19 +2109,407 @@
   //   document.write("<script src='js/components/datafile.js'><''/script>");
   // })
   </script>
+  <!-- <script src="http://maps.google.com/maps/api/js?v=3.3&sensor=true"></script> -->
   <script>
   // import flickDataList from './js/components/datafile.js';
   // window.addEventListener('unload',function(){
   //   document.write("<script src='js/components/datafile.js'><''/script>");
   // })
 
-    $('#themePrevBt').on('click',function(){
-      $('.themecast_tab_ul').animate({
-        left:-50
-      })
+  window.addEventListener('DOMContentLoaded', function () {
+
+    //livePanner
+    const livePannel =document.getElementsByClassName('live__hv_pannel')[0];
+    const livePannelV1 =document.getElementsByClassName('livePannel__v1')[0];
+    const livePannelV2 =document.getElementsByClassName('livePannel__v2')[0];
+    const livePannelBt1 =document.getElementsByClassName('livePannel__rank_box')[0];
+    const livePannelBt2 =document.getElementsByClassName('livePannel__rank_box')[1];
+    const livePannelBox =document.getElementsByClassName('livePannel__middle')[0];
+    const navLiveBox=document.getElementsByClassName('nav__live')[0];
+
+    navLiveBox.addEventListener('mouseenter',function(){
+      livePannel.classList.add('livePannel__Active');
+    });
+
+     livePannel.addEventListener('mouseleave',function(){
+      livePannel.classList.remove('livePannel__Active');
+    })
+ 
+
+    livePannelBox.addEventListener('click',function(e){
+      if(e.target ==livePannelBt1){
+        livePannelV1.classList.add('livePannel__Active');
+        livePannelV2.classList.remove('livePannel__Active');
+        livePannelBt1.classList.add('livePannel__bgAct');
+        livePannelBt2.classList.remove('livePannel__bgAct');
+      }else if(e.target==livePannelBt2){
+        livePannelV1.classList.remove('livePannel__Active');
+        livePannelV2.classList.add('livePannel__Active');
+        livePannelBt1.classList.remove('livePannel__bgAct');
+        livePannelBt2.classList.add('livePannel__bgAct');
+      }
     })
 
-  window.addEventListener('DOMContentLoaded', function () {
+
+    
+    //flick
+    function flickFunc(){
+      
+      const flickPrevBt =document.getElementById('flickPrevBt');
+      const flickNextBt = document.getElementById('flickNextBt');
+      const flickNum=document.getElementById('flickNum');
+      const flickPagingBox=document.getElementById('flickPagingBox');
+      const rrTaskBox =document.getElementById('rrTaskBox');//
+      const flicDABox = document.getElementById('flicDABox');
+      const flickChangeDiv = document.getElementsByClassName('rr_change')[0]
+
+      let area = '서울시 송파구'
+      let flickPagingNum=0;
+
+      flickPrevBt.addEventListener('click',function(e){
+        e.preventDefault()
+        flickPagingNum--;
+        if(flickPagingNum<0){
+          flickPagingNum= flickDataList.length-1;
+        }
+        
+        flickDataFunc()
+      });
+      flickNextBt.addEventListener('click',function(e){
+        e.preventDefault()
+        flickPagingNum++;
+        if(flickPagingNum>flickDataList.length-1){
+          flickPagingNum=0;
+        }
+        flickDataFunc()
+      });
+
+      function flickDataFunc(){
+        flicDABox.firstElementChild.innerHTML=dateNow;
+        flicDABox.firstElementChild.href='text';
+        flickPagingBox.lastElementChild.innerHTML='/'+flickDataList.length;
+        flickNum.innerHTML=flickPagingNum+1;
+     {   
+        // let flickTabBoxdiv = document.createElement('div');
+        // flickTabBoxdiv.classList.add('rr_tab');
+
+        // let flickTabInnerBoxdiv1 = document.createElement('div');
+        // flickTabInnerBoxdiv1.classList.add('rr_tab_daily');
+
+        // let flickDateAn = document.createElement('a');
+        // flickDateAn.classList.add('ft-bd');
+
+        // let flickAreaAn = document.createElement('a');
+        // flickAreaAn.classList.add('rr_tab_title');
+
+        // let flickTabInnerBoxdiv2 = document.createElement('div');
+        // flickTabInnerBoxdiv2.classList.add('rr_tab_bt');
+        
+        // let flickPagingTle =document.createElement('div');
+        // flickPagingTle.id = 'flickPagingBox';
+        // flickPagingTle.classList.add('rr_tab_paging');
+        
+        // let flickPagingInnerSpan = document.createElement('span');
+        // flickPagingInnerSpan.id="flickNum";
+        // flickPagingInnerSpan.classList.add('rr_active_tb');
+
+        // let flickPagingLenSpan=document.createElement('span');
+
+        // let arrowBoxdiv = document.createElement('div');
+        // arrowBoxdiv.classList.add('arrow_cont');
+        // let arrowBoxInnerPrevAn = document.createElement('a');
+        
+        // flickTabInnerBoxdiv1.appendChild(flickDateAn)
+        // flickTabInnerBoxdiv1.appendChild(flickAreaAn)
+
+        // flickTabInnerBoxdiv2.appendChild(flickPagingTle)
+
+        // flickTabInnerBoxdiv2.appendChild(flickPagingTle)
+
+        // flickTabBoxdiv.appendChild(flickTabInnerBoxdiv1)
+        // flickTabBoxdiv.appendChild(flickTabInnerBoxdiv2)
+      }
+        flickChangeDiv.innerHTML='';
+        if(flickPagingNum==0){//날씨
+
+         flicDABox.lastElementChild.innerHTML=area+'＞';
+          let weatherAn = document.createElement('a');
+          let weatherHref='test';
+          weatherAn.href=weatherHref;
+          let weatherUl = document.createElement('ul');
+          weatherUl.classList.add('rr_weather_box');
+
+          let weatherList1 = document.createElement('li');
+          weatherList1.setAttribute('class','rr_weather_today rr_sky_state');
+          let weatherList2 = document.createElement('li');
+          weatherList2.setAttribute('class','rr_weather_today rr_today_mountem');
+
+          let weatrherSpan1 =document.createElement('span');
+          weatrherSpan1.classList.add('rr_today_tem');
+
+          let nowTemp = 25;
+          let lowTemp=19+'°';
+          let maxTemp=28+'°';
+
+          weatrherSpan1.innerHTML=nowTemp;
+          let weatherSup = document.createElement('sup');
+          weatherSup.innerHTML='°C';
+          weatherSup.classList.add('tempsup')
+
+          let weatrherSpan2=document.createElement('span');
+          weatrherSpan2.setAttribute('class','ft-sk ft-bd');
+          weatrherSpan2.innerHTML=lowTemp;
+
+          let weatrherSpan3=document.createElement('span');
+          weatrherSpan3.setAttribute('class','ft-rd ft-bd');
+          weatrherSpan3.innerHTML='/ '+maxTemp;
+
+          let weatherList3 = document.createElement('li');
+          
+          let weatherPara = document.createElement('p');
+          weatherPara.setAttribute('class','rr_weather_today ft-bd rr_weather_tx');
+
+          let weatherParaText = '어제와 같아요';
+          weatherPara.innerHTML=weatherParaText+'<br>';
+          
+          let weatherParaSpna1 = document.createElement('span');
+          let weatherState ='미세먼지'
+          let weatherStateTx = ' 좋음';
+          weatherParaSpna1.innerHTML=weatherState;
+          let weatherParaSpna2 = document.createElement('span');
+          weatherParaSpna2.classList.add('ft-sk');
+          weatherParaSpna2.innerHTML=weatherStateTx;
+
+          let weatherNewsPara = document.createElement('p');
+          weatherNewsPara.classList.add('rr_weather_news');
+
+          let weatherNewsSpan1 =document.createElement('span');
+          weatherNewsSpan1.classList.add('ft-bl');
+          weatherNewsSpan1.innerHTML='날씨';
+
+          let weatherNewsSpan2 = document.createElement('span');
+          weatherNewsSpan2.innerHTML=' 실시간 기상 정보 확인하기 ㅣ';
+
+          let weatherNewsSpan3 =document.createElement('span');
+          weatherNewsSpan3.classList.add('ft-ygray');
+          weatherNewsSpan3.innerHTML='주간예보';
+
+          weatrherSpan1.appendChild(weatherSup);
+
+          weatherList2.appendChild(weatrherSpan1);
+          weatherList2.appendChild(weatrherSpan2);
+          weatherList2.appendChild(weatrherSpan3);
+          
+          weatherPara.appendChild(weatherParaSpna1);
+          weatherPara.appendChild(weatherParaSpna2);
+
+          weatherList3.appendChild(weatherPara);
+
+          weatherUl.appendChild(weatherList1);
+          weatherUl.appendChild(weatherList2);
+          weatherUl.appendChild(weatherList3);
+
+          weatherNewsPara.appendChild(weatherNewsSpan1);
+          weatherNewsPara.appendChild(weatherNewsSpan2);
+          weatherNewsPara.appendChild(weatherNewsSpan3);
+
+
+          weatherAn.appendChild(weatherUl);
+          weatherAn.appendChild(weatherNewsPara);
+
+          flickChangeDiv.appendChild(weatherAn);
+
+        }
+        else if(flickPagingNum==1){
+          //flickpage 2 와 매우 흡사 리팩토링
+          flicDABox.lastElementChild.innerHTML='날씨 ＞';
+          let newsUl =document.createElement('ul');
+          newsUl.classList.add('rr_news');
+
+          for(let i =0;i<3;i++){
+            let newsList= document.createElement('li');
+            newsList.classList.add('rr_news_row');
+            let flickDataTarget = flickDataList[1]['flickPageList'][i];
+            if(i==0||i==2){
+              for(let j =0;j<2;j++){
+                let newsAn = document.createElement('a');
+                if(j==0){
+                  newsAn.setAttribute('class','rr_news_title_a rr_news_tx');
+                  newsAn.href=flickDataTarget.flickUrl;
+                  newsAn.innerHTML=flickDataTarget.title;
+
+                }else if(j==1){
+                  newsAn.setAttribute('class','rr_news_tx rr_news_content');
+                  newsAn.href=flickDataTarget.flickUrl;
+                  newsAn.innerHTML=flickDataTarget.flickContent;
+
+                }
+                newsList.appendChild(newsAn);
+              }
+
+            }else if(i==1){
+              for(let j =0;j<3;j++){
+                let newsAn = document.createElement('a');
+                if(j==0){
+                  newsAn.setAttribute('class','rr_news_title_a rr_news_tx');
+                  newsAn.href=flickDataTarget.flickUrl;
+                  newsAn.innerHTML=flickDataTarget.title;
+                }else if(j==1){
+                  newsAn.setAttribute('class','rr_news_tx rr_news_content');
+                  newsAn.href=flickDataTarget.flickUrl;
+                  newsAn.innerHTML=flickDataTarget.flickContent1;
+                }else if(j==2){
+                  let newi = document.createElement('i');
+                  newi.classList.add('rr_new_bar');
+
+                  newsAn.setAttribute('class','rr_news_tx rr_news_content');
+                  newsAn.href=flickDataTarget.flickUrl;
+                  newsAn.innerHTML=flickDataTarget.flickContent2;
+
+                  newsList.appendChild(newi);
+                  newsList.appendChild(newsAn);
+                }
+                newsList.appendChild(newsAn);
+              }
+            }
+          newsUl.appendChild(newsList)
+          }
+          flickChangeDiv.appendChild(newsUl)
+
+        }
+        else if(flickPagingNum==2){
+          flicDABox.lastElementChild.innerHTML='스포츠 ＞';
+          let newsUl =document.createElement('ul');
+          newsUl.classList.add('rr_news');
+
+          for(let i =0;i<3;i++){
+            let newsList= document.createElement('li');
+            newsList.classList.add('rr_news_row');
+            let flickDataTarget = flickDataList[2]['flickPageList'][i];
+            if(i==0||i==2){
+              for(let j =0;j<2;j++){
+                let newsAn = document.createElement('a');
+                if(j==0){
+                  newsAn.setAttribute('class','rr_news_title_a rr_news_tx');
+                  newsAn.href=flickDataTarget.flickUrl;
+                  newsAn.innerHTML=flickDataTarget.title;
+
+                }else if(j==1){
+                  newsAn.setAttribute('class','rr_news_tx rr_news_content');
+                  newsAn.href=flickDataTarget.flickUrl;
+                  newsAn.innerHTML=flickDataTarget.flickContent;
+
+                }
+                newsList.appendChild(newsAn);
+              }
+
+            }else if(i==1){
+              for(let j =0;j<2;j++){
+                let newsAn = document.createElement('a');
+                if(j==0){
+                  newsAn.setAttribute('class','rr_news_title_a rr_news_tx');
+                  newsAn.href=flickDataTarget.flickUrl;
+                  newsAn.innerHTML=flickDataTarget.title;
+                }else if(j==1){
+                  newsAn.setAttribute('class','rr_news_tx rr_news_content');
+                  newsAn.href=flickDataTarget.flickUrl;
+                  newsAn.innerHTML=flickDataTarget.flickContent;
+                }
+                newsList.appendChild(newsAn);
+              }
+            }
+
+          newsUl.appendChild(newsList)
+          }
+          flickChangeDiv.appendChild(newsUl)
+
+        }
+        else if(flickPagingNum==3){
+          flicDABox.lastElementChild.innerHTML='영어회화 ＞';
+          let newsUlAn =document.createElement('a');
+          newsUlAn.href='test';
+          let newsUl =document.createElement('ul');
+          newsUl.classList.add('rr_news');
+
+          for(let i=0;i<3;i++){
+            let flickEnDataTarget=flickDataList[3]['flickPageList'][i];
+            let newsEnList = document.createElement('li');
+            if(i==1){
+              newsEnList.classList.add('rr_eng_main_tx');
+            }
+            let newsEnColorSpan = document.createElement('span');
+            newsEnColorSpan.classList.add('rr_eng_txbl');
+            newsEnColorSpan.innerHTML=flickEnDataTarget.color
+
+            newsEnList.append(flickEnDataTarget.title);
+            newsEnList.append(newsEnColorSpan);
+            newsEnList.append(flickEnDataTarget.content);
+            
+            newsUl.appendChild(newsEnList);
+          }
+
+          newsUlAn.appendChild(newsUl)
+          flickChangeDiv.appendChild(newsUlAn)
+        }
+        else if(flickPagingNum==4){
+          flicDABox.lastElementChild.innerHTML='생활도구 ＞';
+
+          let newsLivingDiv = document.createElement('div');
+          newsLivingDiv.classList.add('rr_news');
+
+          let newsUl =document.createElement('ul');
+          newsUl.classList.add('rr_living_ul');
+
+          for(let i=0;i<8;i++){
+            let flickEnDataTarget=flickDataList[4]['flickPageList'][i];
+            let newsLivingList = document.createElement('li');
+            newsLivingList.classList.add('rr_living');
+
+            let newsLivingAn =document.createElement('a');
+            newsLivingAn.href=flickEnDataTarget.url;
+
+            let newsLivingSpan=document.createElement('span');
+            newsLivingSpan.setAttribute('class','rr_icon rr_icon'+(i+1));
+
+            newsLivingAn.appendChild(newsLivingSpan);
+            newsLivingAn.append(flickEnDataTarget.title);    
+            newsLivingList.appendChild(newsLivingAn);
+            newsUl.appendChild(newsLivingList);
+          }
+
+          newsLivingDiv.appendChild(newsUl);
+          flickChangeDiv.appendChild(newsLivingDiv);
+        }
+      }
+      flickDataFunc();
+      return;
+    }
+    flickFunc();
+
+    //liveRank
+    function liveRankFunc(){
+    //news liveRank
+    setInterval(function(){
+      $('.ct-ul').animate({
+        top:-($('.ct-ul li').height())
+      },function(){
+        $('.ct-ul').css({top:0})
+        $('.ct-ul').find('li:first').insertAfter($('.ct-ul').find('li:last'))
+      })
+    },5000);
+
+    //liveRank
+    setInterval(function(){
+      $('.live__ul').animate({
+        top:-($('.live__ul').find('li:first').height())
+      },function(){
+        $('.live__ul').css({top:0})
+        $('.live__ul').find('li:first').insertAfter($('.live__ul').find('li:last'))
+      })
+    },4000)
+
+  }
+  liveRankFunc()
 
   //themeTab
     const themePrevBt = document.getElementById('themePrevBt');
@@ -1888,11 +2523,11 @@
     themeCategodyContArr = [46];
 
     //각 탭 넓이.themecategodynum으로 컨트롤 하면 댐.
-    for (let i = 0; i < themecastTabCont.children.length; i++) {
-      themeCategoryArr.push(themecastTabCont.children[i].clientWidth)
-      themeCategodyContArr.push(themeCategoryArr.reduce((x, y) => x + y))
-    }
-    console.log(themeCategoryArr)
+    // for (let i = 0; i < themecastTabCont.children.length; i++) {
+    //   themeCategoryArr.push(themecastTabCont.children[i].clientWidth)
+    //   themeCategodyContArr.push(themeCategoryArr.reduce((x, y) => x + y))
+    // }
+    // console.log(themeCategoryArr)
 
 
     themePrevBt.addEventListener('click', function (e) {
@@ -1903,12 +2538,9 @@
       themeCategoryNum--;
 
   //code
-      // $('.themecast_tab_ul').stop();
-
-        $('.themecast_tab_ul').css({left:-($('.themecast_tab_ul li').width())});
-        $('.themecast_tab_ul').find('li:last').insertBefore($('.themecast_tab_ul').find('li:first'));
-        $('.themecast_tab_ul').animate({left:0});
-
+      $('.themecast_tab_ul').find('li:last').insertBefore($('.themecast_tab_ul').find('li:first'));
+      $('.themecast_tab_ul').css({left:-($('.themecast_tab_ul li').width())});
+      $('.themecast_tab_ul').animate({left:0});
   //code
       themeCategoryContFunc();
 
@@ -1920,83 +2552,34 @@
       if (themeCategoryNum > themechastCategoryList.length - 1) {
         themeCategoryNum = 0;
       }
-      // let clone = themecastTabCont.children[0].cloneNode(true);
-      // themecastTabCont.appendChild(themecastTabCont.children[0]);
-
   //code
-        // $('.themecast_tab_ul').stop();
-
+        $('.themecast_tab_ul').stop();
         $('.themecast_tab_ul').animate({left:-$('.themecast_tab_ul li').width()},300,function(){
         $('.themecast_tab_ul').find('li:first').insertAfter($('.themecast_tab_ul').find('li:last'));
         $('.themecast_tab_ul').css({left:0});
       })
-
-     
-
   //code
 
       themeCategoryContFunc();
     });
-
-
-
-{
-
-
-    // const themeArrowBox=document.getElementById('themeArrowBox');
-    // themeArrowBox.addEventListener('click',function(e){
-    //   console.log(themeCategoryNum)
-    //   e.preventDefault();
-    //   if(e.target.id=='themePrevBt'){
-    //     if (themeCategoryNum <= 0) {
-    //     themeCategoryNum = themechastCategoryList.length;
-    //   }
-
-    //   // $('.themecast_tab_ul').css({left:-$('.themecast_tab_ul li').width()})
-    //   // $('.themecast_tab_ul li').find('li:last').insertBefore($('.themecast_tab_ul')).find('li:first');
-    //   // $('.themecast_tab_ul').animate({left:0})
-
-    //   console.log(themeCategoryArr[themeCategoryNum])
-    //   themeCategoryNum--;
-
-    //   themeCategoryContFunc()
-
-    //   }else if(e.target.tagName=='themeNextBt'){
-    //     themeCategoryNum++;
-    //     if (themeCategoryNum > themechastCategoryList.length - 1) {
-    //     themeCategoryNum = 0;
-    //   }
-
-    //   // $('.themecast_tab_ul').animate({left:-$('.lib ul li').width()},function(){
-
-    //   //  $('.themecast_tab_ul').css({left:0});
-    //   //  $('.themecast_tab_ul').find('li:first').insertAfter($('.themecast_tab_ul').find('li:last'));
-    //   //  let aa =$('.themecast_tab_ul').find('li:first')
-    //   //  console.log(aa)
-
-    //   // })
-
-    //   // let clone = themecastTabCont.children[0].cloneNode(true);
-    //   // themecastTabCont.appendChild(themecastTabCont.children[0]);
-
-    //   themeCategoryContFunc()
-    //   }
-  
-    // })
-  }
   //themeTab
   const themecastBody = document.getElementsByClassName('themecast_body')[0]
   let themecastMainUl = document.getElementsByClassName('themecast__type_ul')[0];
-  let themecastMainTabList = document.querySelectorAll('.themecast_tab_ul li');
+  let themecastMainTabList = document.querySelectorAll('.themecast_tab_ul li .themecast_main_tabList_border');
   
   let themecastMainDataNum = 0;
 
   function themeCategoryContFunc(dataNum) {
 
-    console.log(themechastCategoryList[themeCategoryNum])
-    console.log(themeTabColor)
-    console.log(themeTabColor[`${themechastCategoryList[themeCategoryNum]}`])
-    console.log('themecastMainTabList',themecastMainTabList[themeCategoryNum])
+ 
+    themecastMainTabList[themeCategoryNum].style.background=themeTabColor[0][themechastCategoryList[themeCategoryNum]][0].color;
+    for(let tabCnt =0;tabCnt<themecastMainTabList.length;tabCnt++){
+      if(tabCnt==themeCategoryNum) continue;
+      themecastMainTabList[tabCnt].style.background='white';
+    }
+
+    
+
 
     themecastMainUl.innerHTML = '';
     let topListSideArr = [1, 5, 6, 14, 18];
