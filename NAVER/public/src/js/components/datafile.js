@@ -7,7 +7,83 @@ let todayDay = ['일', '월', '화', '수', '목', '금', '토'];
 
 let dateNow = mn + '.' + today + '.(' + todayDay[dy] + ')';
 
-const flickDataList = [{ //날씨정보
+let liveRankData=[
+  {
+    no1:[
+      {
+        title:"",
+        href:"https:www.naver.com/live1",
+        content:"北 김정은·시진핑, 새로운 정세하 '전략전술 협동 강화' 토의",
+      }
+    ],
+    no2:[
+      {
+        title:"",
+        href:"https:www.naver.com/live2",
+        content:"문대통령, 오늘 러시아 방문…비핵화 지지·남북러 협력촉진",
+      }
+    ],
+    no3:[
+      {
+        title:"",
+        href:"https:www.naver.com/live3",
+        content:"美 '신속한 비핵화' 속도전 속 폼페이오-볼턴 강온 역할분담?",
+      }
+    ],
+    no4:[
+      {
+        title:"",
+        href:"https:www.naver.com/live4",
+        content:"내일 남북적십자회담…이산가족 상봉에 '+α' 합의 가능할까",
+      }
+    ],
+    no5:[
+      {
+        title:"",
+        href:"https:www.naver.com/live5",
+        content:"주한미군 73년 만에 용산서 나간다…평택 시대 개막",
+      }
+    ],
+    no6:[
+      {
+        title:"",
+        href:"https:www.naver.com/live6",
+        content:"위기의 노인들…저학력자 고용·실업률 역대 '최악",
+      }
+    ],
+    no7:[
+      {
+        title:"",
+        href:"https:www.naver.com/live7",
+        content:"위기의 청년들 고용·실업률 역대 '최악'",
+      }
+    ],
+    no8:[
+      {
+        title:"",
+        href:"https:www.naver.com/live8",
+        content:"'휴가쓰는게 가장 쉬웠어요'…대기업들 '근무혁신' 실천 1위",
+      }
+    ],
+    no9:[
+      {
+        title:"",
+        href:"https:www.naver.com/live9",
+        content:"석유제품 5.3%·치킨 2.4%↑…생산자물가 상승률 석달만에 최고",
+      }
+    ],
+    no10:[
+      {
+        title:"",
+        href:"https:www.naver.com/live10",
+        content:"미국 트럼프, 새로운 정세하 '전략전술 협동 강화' 토의",
+      }
+    ],
+  }
+]
+
+const flickDataList = [
+  { //날씨정보
     flickPageList: [{
         area: '서울시 송파구',
         url: 'https:www.google.com1',
@@ -36,46 +112,64 @@ const flickDataList = [{ //날씨정보
     ]
   },
   { //뉴스
-    flickPageList: [{
-      title: '뉴스',
-      newsText: 'TV뉴스',
-      newsInfo1: '생방송',
-      newsInfo2: '저녁 메인뉴스 다시보기',
-      newsUrl: 'https://www.google.com1',
-      studyText: '학습',
-      studyInfo1: '영어로 듣는 뉴스',
-      studyInfo2: '글로벌 회화',
-      studyUrl: 'https://www.google.com2',
-      realEsText: '부동산',
-      realEsInfo: '서울 집값 상승 잔불 남았나···보유세 개편안 ···',
-      realEsInfo: 'https://www.google.com3',
-    }, ]
+    flickPageList: [
+    {
+      title: 'TV뉴스',
+      flickState: '생방송',
+      flickContent: '저녁 메인뉴스 다시보기',
+      flickUrl: 'https://www.google.com1',
+    }, 
+    {
+
+      title: '학습',
+      flickContent1: '영어로 듣는 뉴스',
+      flickContent2: '글로벌 회화',
+      flickUrl: 'https://www.google.com2',
+    }, 
+    {
+      title: '부동산',
+      flickContent: '서울 집값 상승 잔불 남았나···보유세 개편안 ···',
+      flickUrl: 'https://www.google.com3',
+    }, 
+  ]
   },
   { //스포츠
-    flickPageList: [{
-      title: '스포츠,',
-      soccorText: '2018 러시아',
-      soccorImfo: '[풋볼N토크] 16강 시작! 8강에서 메···',
-      soccorUrl: 'https://www.google.com1',
-      nomalText: '일반',
-      nomalImfo: '[TV중계] BGF vs 한국물가정보 - KB국민',
-      nomalUrl: 'https://www.google.com2',
-      esportsText: 'e 스포츠',
-      esportsImfo: 'SKT, 중위권 도약 눈앞...bbq는 개막 8연패',
-      esportsUrl: 'https://www.google.com3',
-    }, ]
+    flickPageList: [
+      {
+      title: '2018 러시아',
+      flickContent: '[풋볼N토크] 16강 시작! 8강에서 메···',
+      flickUrl: 'https://www.google.com1',
+    }, 
+    {
+      title: '일반',
+      flickContent: '[TV중계] BGF vs 한국물가정보 - KB국민',
+      flickUrl: 'https://www.google.com2',
+    }, 
+    {
+      title: 'e 스포츠',
+      flickContent: 'SKT, 중위권 도약 눈앞...bbq는 개막 8연패',
+      flickUrl: 'https://www.google.com3',
+    }, 
+  ]
   },
   { //영어회화
-    flickPageList: [{
-      title: '영어회화',
-      text1Imfo: '분량',
-      text1: '은 어느 정도로 해야 해요?',
-      text2Imfo: 'How long',
-      text2: ' should it be?',
-      text3Imfo: '하우 롱',
-      text3: ' 슈드 잇 비?',
-      url: 'https://www.google.com1',
-    }, ]
+    flickPageList: [
+      {
+      title: '거리의',
+      color: ' 상수도 본관 ',
+      content: '이 터졌어요.',
+    }, 
+    {
+      title: 'A',
+      color: ' water main ',
+      content: 'in the street has broken.',
+    }, 
+    {
+      title: '어',
+      color: ' 워터 메인',
+      content: ' 인 더 스트리트 해즈 브로큰',
+    }, 
+  ]
   },
   { //생활도구
     flickPageList: [{
@@ -121,174 +215,203 @@ let themeTabColor=[
   {
     'living':[
       {
-        "color":"#00b336",
+        "title":"living",
+        color:"#00b336",
         "border-bottom":"3px solid #00c73c;",
       }
     ],
     'food':[
       {
+        "title":"food",
         "color":"#00b336",
         "border-bottom":"3px solid #00c73c;",
       }
     ],
     'sports':[
       {
+        "title":"sports",
         "color":"#2565d0",
         "border-bottom":"3px solid #2565d0;",
       }
     ],
     'car':[
       {
+        "title":"car",
         "color":"#058e42",
         "border-bottom":"3px solid #058e42;",
       }
     ],
     'beauty':[
       {
+        "title":"beauty",
         "color":"#ff629c",
         "border-bottom":"3px solid #ff629c;",
       }
     ],
     'parent':[
       {
+        "title":"parent",
         "color":"#efae00",
         "border-bottom":"3px solid #efae00;",
       }
     ],
     'health':[
       {
+        "title":"health",
         "color":"#00c73c",
         "border-bottom":"3px solid #00c73c;",
       }
     ],
     'webtoon':[
       {
+        "title":"webtoon",
         "color":"#00b336",
         "border-bottom":"3px solid #00c73c;",
       }
     ],
     'game':[
       {
+        "title":"game",
         "color":"#00bbc3",
         "border-bottom":"3px solid #00bbc3;",
       }
     ],
     'TVent':[
       {
+        "title":"TVent",
         "color":"#07bc88",
         "border-bottom":"3px solid #07bc88;",
       }
     ],
     'music':[
       {
+        "title":"music",
         "color":"#00b336",
         "border-bottom":"3px solid #00b336;",
       }
     ],
     'movie':[
       {
+        "title":"movie",
         "color":"#fc5a58",
         "border-bottom":"3px solid #fc5a58;",
       }
     ],
     'book':[
       {
+        "title":"book",
         "color":"#00b336",
         "border-bottom":"3px solid #00c73c;",
       }
     ],
     'together':[
       {
+        "title":"together",
         "color":"#00b336",
         "border-bottom":"3px solid #00c73c;",
       }
     ],
     'travel':[
       {
+        "title":"travel",
         "color":"#559bfa",
         "border-bottom":"3px solid #559bfa;",
       }
     ],
     'design':[
       {
+        "title":"design",
         "color":"#4a4b96",
         "border-bottom":"3px solid #4a4b96;",
       }
     ],
     'economy':[
       {
+        "title":"economy",
         "color":"#2565d0",
         "border-bottom":"3px solid #2565d0;",
       }
     ],
     'JOB':[
       {
+        "title":"JOB",
         "color":"#559bfa",
         "border-bottom":"3px solid #559bfa;",
       }
     ],
     'science':[
       {
+        "title":"science",
         "color":"#00b336",
         "border-bottom":"3px solid #00c73c;",
       }
     ],
     'china':[
       {
+        "title":"china",
         "color":"#00b336",
         "border-bottom":"3px solid #00c73c;",
       }
     ],
     'business':[
       {
+        "title":"business",
         "color":"#2565d0",
         "border-bottom":"3px solid #2565d0;",
       }
     ],
     'FARM':[
       {
+        "title":"FARM",
         "color":"#b37f00",
         "border-bottom":"3px solid #b37f00;",
       }
     ],
     'school':[
       {
+        "title":"school",
         "color":"#ff9631",
         "border-bottom":"3px solid #ff9631;",
       }
     ],
     'stage':[
       {
+        "title":"stage",
         "color":"#ff629c",
         "border-bottom":"3px solid #ff629c;",
       }
     ],
     'law':[
       {
+        "title":"law",
         "color":"#c0256d",
         "border-bottom":"3px solid #c0256d;",
       }
     ],
     'animal':[
       {
+        "title":"animal",
         "color":"#559bfa",
         "border-bottom":"3px solid #559bfa;",
       }
     ],
     'wedding':[
       {
+        "title":"wedding",
         "color":"#ff629c",
         "border-bottom":"3px solid #ff629c;",
       }
     ],
     'tech':[
       {
+        "title":"tech",
         "color":"#c0256d",
         "border-bottom":"3px solid #c0256d;",
       }
     ],
     'energy':[
       {
+        "title":"energy",
         "color":"#00b336",
         "border-bottom":"3px solid #00c73c;",
       }
@@ -8716,30 +8839,3 @@ let themecastTopRightData = [
     ],
   }
 ]
-
-// export default {flickDataList
-//   ,themechastStaticDataList
-//   ,themechastCategoryList
-//   ,themecastNoteDataList
-//   ,themecastBottomSideListData
-//   ,themecastMainBanner
-//   ,themecastTopBigImg
-//   ,themecastTopRightData};
-
-// export default flickDataList;
-// export default themechastStaticDataList;
-// export default themechastCategoryList;
-// export default themecastNoteDataList;
-// export default themecastBottomSideListData;
-// export default themecastMainBanner;
-// export default themecastTopBigImg;
-// export default themecastTopRightData;
-
-// export flickDataList;
-// export themechastStaticDataList;
-// export themechastCategoryList;
-// export themecastNoteDataList;
-// export themecastBottomSideListData;
-// export themecastMainBanner;
-// export themecastTopBigImg;
-// export themecastTopRightData;
